@@ -1965,6 +1965,45 @@
         .dark .pertamina-title {
             color: #f87171;
         }
+
+        #pis-auditor-carousel .carousel-slide {
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #pis-auditor-carousel .carousel-slide img {
+            object-fit: contain;
+            padding: 0.5rem;
+            background: #ffffff;
+        }
+
+        .pis-logo-badge {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            z-index: 11;
+            width: 68px;
+            height: 68px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+            padding: 0.4rem;
+            pointer-events: none;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+        }
+
+        .pis-logo-badge img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .dark .pis-logo-badge {
+            background: rgba(17, 24, 39, 0.88);
+            border-color: rgba(75, 85, 99, 0.8);
+        }
     </style>
     </style>
 </head>
@@ -2238,10 +2277,10 @@
                      <div class="card pertamina-project-card rounded-xl p-6 flex flex-col">
                         <div class="mb-4">
                             <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
+                                <div class="pis-logo-badge">
+                                    <img src="assets/PertaminaDashboardAuditor/logoPIS.webp" alt="PIS Logo">
+                                </div>
                                 <div class="carousel-container" id="pis-auditor-carousel">
-                                    <div class="carousel-slide">
-                                        <img src="assets/PertaminaDashboardAuditor/logoPIS.webp" alt="Pertamina International Shipping - Logo" class="w-full h-full object-contain rounded-lg bg-white">
-                                    </div>
                                     <div class="carousel-slide">
                                         <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.53.58.jpeg" alt="Auditor Dashboard - Screen 1" class="w-full h-full object-cover rounded-lg">
                                     </div>
@@ -2289,7 +2328,7 @@
                         </div>
                         <h3 class="text-xl font-bold pertamina-title">Auditor Dashboard (Audit Monitoring Center)</h3>
                         <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Pertamina International Shipping</p>
-                        <p class="flex-grow text-gray-700 dark:text-gray-300">Auditor Dashboard is an end-to-end audit findings monitoring web app: from Excel dataset upload, normalization, and metrics calculation (aging, deadline, risk level), to MySQL persistence and interactive analytics dashboard. The backend uses FastAPI for upload APIs, findings search, analytics/metrics, and audit trail on data refresh. The Next.js frontend provides dashboard views, findings table with filtering and export, chart guide, and optional cookie-based JWT authentication. This project applies a single-source dataset approach where each new upload resets previous findings and replaces them with the latest dataset.</p>
+                        <p class="flex-grow text-gray-700 dark:text-gray-300">Auditor Dashboard is an internal web application for end-to-end monitoring of audit findings, from Excel upload and metric computation (aging, deadline, risk level) to secure storage and interactive analytics. Built with FastAPI, SQLAlchemy, MySQL, and Next.js 14, it implements a single-source dataset workflow where each upload replaces previous findings with the latest validated data.</p>
                         <div class="mt-4 flex flex-wrap gap-2 items-center justify-between">
                             <div>
                                 <span class="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 text-xs font-medium px-2.5 py-0.5 rounded-full">FastAPI</span>
@@ -3146,7 +3185,7 @@
 
         function initializeCarousels() {
             // Initialize Pertamina Auditor Dashboard carousel
-            initializeCarousel('pis-auditor-carousel', 12); // 12 images total (logo + 11 screenshots)
+            initializeCarousel('pis-auditor-carousel', 11); // 11 screenshots total
             // Initialize VPM carousel
             initializeCarousel('vpm-carousel', 12); // 12 images total
             // Initialize Agriblock carousel
