@@ -1840,7 +1840,97 @@
                 transform: scale(1) translateY(0);
                 opacity: 1;
             }
- }
+        }
+
+        /* Project Image Carousel Styles */
+        .project-carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .carousel-nav:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-prev {
+            left: 0.5rem;
+        }
+
+        .carousel-next {
+            right: 0.5rem;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.25rem;
+            z-index: 10;
+        }
+
+        .carousel-indicator {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-indicator.active {
+            background: rgba(255, 255, 255, 1);
+            transform: scale(1.2);
+        }
+
+        .dark .carousel-nav {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .dark .carousel-nav:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
@@ -1932,15 +2022,15 @@
                     <!-- Statistics Section -->
                     <div class="stats-container">
                         <div class="stat-card">
-                            <div class="stat-number">7</div>
+                            <div class="stat-number">8</div>
                             <div class="stat-label">Experiences</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">4</div>
+                            <div class="stat-number">6</div>
                             <div class="stat-label">Projects</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">11</div>
+                            <div class="stat-number">12</div>
                             <div class="stat-label">Certifications</div>
                         </div>
                         <div class="stat-card">
@@ -2011,6 +2101,27 @@
                     <!-- Professional Experience -->
                     <div class="mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-8">Professional Experience</h3>
+                    </div>
+                    <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500">
+                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[41px] top-8 border-4 border-white dark:border-gray-900"></div>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="md:w-20 md:h-20 w-16 h-16 flex-shrink-0">
+                                <img src="assets/bankIndonesia.webp" alt="Central Bank of Indonesia" class="w-full h-full object-cover rounded-lg border-2 border-blue-500">
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-blue-600 dark:text-blue-400">Sep 2025 - Mar 2026</p>
+                                <h3 class="text-lg font-bold mt-1">Data Engineer Intern</h3>
+                                <p class="text-md font-semibold text-gray-600 dark:text-gray-400 mb-2">Central Bank of Indonesia · Internship</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Jakarta, Indonesia · On-site</p>
+                                <ul class="list-disc list-inside text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-3">
+                                    <li>Automated social media data extraction using Python web scraping scripts, collecting 100+ comments every 4 hours (~600 data points per day).</li>
+                                    <li>Managed end-to-end text data pipelines in Cloudera to ensure secure, reliable, and scalable processing of unstructured data.</li>
+                                    <li>Integrated OpenAI GPT-4.1 Mini via Python for sentiment classification and refined prompt strategy, raising model accuracy from 75% to 90%+.</li>
+                                    <li>Developed interactive Power BI dashboards to present positive and negative sentiment trends, enabling faster strategic decisions by senior management.</li>
+                                </ul>
+                                <p class="text-sm font-medium text-blue-700 dark:text-blue-300">Back-End Web Development, Cloudera, AI Prompt Engineering, Power BI, Data Analysis</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500"><div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[41px] top-8 border-4 border-white dark:border-gray-900"></div><div class="flex flex-col md:flex-row gap-4"><div class="md:w-20 md:h-20 w-16 h-16 flex-shrink-0"><img src="assets/pba.png" alt="Polkadot Blockchain Academy" class="w-full h-full object-cover rounded-lg border-2 border-blue-500"></div><div class="flex-1"><p class="text-sm font-medium text-blue-600 dark:text-blue-400">May 2025 - Present</p><h3 class="text-lg font-bold mt-1">Student PBA-X, Wave 3</h3><p class="text-md font-semibold text-gray-600 dark:text-gray-400 mb-2">Polkadot Blockchain Academy - Remote</p><ul class="list-disc list-inside text-sm space-y-1 text-gray-700 dark:text-gray-300"><li>Engineered a custom blockchain from the ground up, utilizing Rust and the Substrate framework.</li><li>Developed custom runtime logic by mastering the FRAME pallet system.</li></ul></div></div></div>
                     <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500">
@@ -2091,8 +2202,119 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                      <div class="card rounded-xl p-6 flex flex-col">
                         <div class="mb-4">
-                            <div class="relative w-full" style="aspect-ratio: 16/9;">
-                                <img src="assets/agriblock.jpg" alt="PlatformAgriblock Project" class="w-full h-full object-cover rounded-lg">
+                            <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
+                                <div class="carousel-container" id="vpm-carousel">
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm.jpg" alt="VPM Company Profile - Homepage" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm2.jpg" alt="VPM Company Profile - Admin Dashboard" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm3.jpg" alt="VPM Company Profile - Gallery" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm4.jpg" alt="VPM Company Profile - Promos" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm5.jpg" alt="VPM Company Profile - Contact Form" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm6.jpg" alt="VPM Company Profile - About Page" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm7.jpg" alt="VPM Company Profile - Services" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm8.jpg" alt="VPM Company Profile - Testimonials" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm9.jpg" alt="VPM Company Profile - User Management" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm10.jpg" alt="VPM Company Profile - Settings" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm11.jpg" alt="VPM Company Profile - Reports" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/vpm12.jpg" alt="VPM Company Profile - Analytics" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                </div>
+                                <button class="carousel-nav carousel-prev" onclick="prevSlide('vpm-carousel')">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-nav carousel-next" onclick="nextSlide('vpm-carousel')">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-indicators" id="vpm-indicators">
+                                    <!-- Indicators will be generated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">VPM Company Profile</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Performa Vista Media</p>
+                        <p class="flex-grow text-gray-700 dark:text-gray-300">Company profile website built with Next.js 14 (App Router), Prisma ORM, and NextAuth, featuring admin dashboard, gallery, promos, and contact form. Production hosting targets Azure App Service with Azure Database for PostgreSQL and Azure Blob Storage for media uploads.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 items-center justify-between">
+                            <div>
+                                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js 14</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">TypeScript</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Prisma</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Azure</span>
+                            </div>
+                            <a href="https://github.com/nurcahyapriantoro/vpm-company-profile" target="_blank" class="btn-details mt-4 md:mt-0">View Details</a>
+                        </div>
+                     </div>
+                     <div class="card rounded-xl p-6 flex flex-col">
+                        <div class="mb-4">
+                            <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
+                                <div class="carousel-container" id="agriblock-carousel">
+                                    <div class="carousel-slide">
+                                        <img src="assets/agriblock.jpg" alt="PlatformAgriblock - Overview" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block1.jpg" alt="PlatformAgriblock - Dashboard" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block2.jpg" alt="PlatformAgriblock - Supply Chain Tracking" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block3.jpg" alt="PlatformAgriblock - Product Registration" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block4.jpg" alt="PlatformAgriblock - Blockchain Verification" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block5.jpg" alt="PlatformAgriblock - Transaction History" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block6.jpg" alt="PlatformAgriblock - Analytics" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block7.jpg" alt="PlatformAgriblock - Reports" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block8.jpg" alt="PlatformAgriblock - User Management" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block9.jpg" alt="PlatformAgriblock - Settings" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block10.jpg" alt="PlatformAgriblock - Notifications" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/block11.jpg" alt="PlatformAgriblock - System Logs" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                </div>
+                                <button class="carousel-nav carousel-prev" onclick="prevSlide('agriblock-carousel')">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-nav carousel-next" onclick="nextSlide('agriblock-carousel')">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-indicators" id="agriblock-indicators">
+                                    <!-- Indicators will be generated by JavaScript -->
+                                </div>
                             </div>
                         </div>
                         <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">PlatformAgriblock</h3>
@@ -2104,7 +2326,96 @@
                                 <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Typescript</span>
                                 <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
                             </div>
-                            <a href="https://github.com/nurcahyapriantoro/PlatformAgriblock" target="_blank" class="btn-details mt-4 md:mt-0">View Details</a>
+                            <div class="flex flex-col space-y-2 mt-4 md:mt-0">
+                                <a href="https://youtu.be/U8q_MPmEqMs" target="_blank" class="btn-details">Watch Demo</a>
+                                <a href="https://github.com/nurcahyapriantoro/PlatformAgriblock" target="_blank" class="btn-details">View Details</a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="card rounded-xl p-6 flex flex-col">
+                        <div class="mb-4">
+                            <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
+                                <div class="carousel-container" id="classnde-carousel">
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (1).jpg" alt="ClassNDE - Homepage" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (2).jpg" alt="ClassNDE - Dashboard" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (3).jpg" alt="ClassNDE - Course Catalog" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (4).jpg" alt="ClassNDE - Video Learning" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (5).jpg" alt="ClassNDE - Progress Tracking" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (6).jpg" alt="ClassNDE - Coaching Booking" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (7).jpg" alt="ClassNDE - Video Coaching" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (8).jpg" alt="ClassNDE - Payment Gateway" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (9).jpg" alt="ClassNDE - Transaction History" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (10).jpg" alt="ClassNDE - Referral System" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (11).jpg" alt="ClassNDE - Admin Dashboard" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (12).jpg" alt="ClassNDE - User Management" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (13).jpg" alt="ClassNDE - Content Management" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (14).jpg" alt="ClassNDE - Analytics" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (15).jpg" alt="ClassNDE - Reports" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (16).jpg" alt="ClassNDE - Settings" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (17).jpg" alt="ClassNDE - Notifications" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (18).jpg" alt="ClassNDE - Profile Management" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/Classnde (19).jpg" alt="ClassNDE - Mobile Responsive" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                </div>
+                                <button class="carousel-nav carousel-prev" onclick="prevSlide('classnde-carousel')">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-nav carousel-next" onclick="nextSlide('classnde-carousel')">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-indicators" id="classnde-indicators">
+                                    <!-- Indicators will be generated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">ClassNDE Platform</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Online Learning & Coaching Platform</p>
+                        <p class="flex-grow text-gray-700 dark:text-gray-300">Comprehensive online learning platform built with Laravel 12, featuring course management, integrated payment system, real-time video coaching with Twilio API, referral program, and admin dashboard with role-based access control.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 items-center justify-between">
+                            <div>
+                                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Laravel 12</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">PHP 8.2</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Twilio API</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Midtrans</span>
+                            </div>
+                            <a href="#" target="_blank" class="btn-details mt-4 md:mt-0">View Details</a>
                         </div>
                      </div>
                      <div class="card rounded-xl p-6 flex flex-col">
@@ -2180,6 +2491,26 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
                 <div class="max-w-7xl mx-auto">
                     <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-content">
+                                <div class="cert-info">
+                                    <div class="cert-badge">Microsoft</div>
+                                    <div class="cert-icon p-1 bg-white">
+                                        <img src="assets/azure-ai-fundamentals-600x600.png" alt="Microsoft Certified: Azure AI Fundamentals" class="w-full h-full object-contain rounded-lg">
+                                    </div>
+                                    <h3 class="cert-title">Microsoft Certified: Azure AI Fundamentals</h3>
+                                    <div class="cert-provider">
+                                        <i class="fab fa-microsoft"></i>
+                                        <span>Microsoft · Issued Nov 2025</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.credly.com/badges/fba8942a-249b-445f-81d2-c0eccdf61695/linked_in_profile" target="_blank" class="cert-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>View Certificate</span>
+                                </a>
+                            </div>
+                        </div>
+
                         <!-- Dicoding Certifications -->
                         <div class="cert-card">
                             <div class="cert-content">
@@ -2674,7 +3005,14 @@
                 if (e.target.tagName === 'A') mobileMenu.classList.add('hidden');
             });
 
-            const skills = ["Back End Web Development", "Google Cloud Platform (GCP)", "Blockchain", "TypeScript"];
+            const skills = [
+                "Back End Web Development",
+                "Google Cloud Platform (GCP)",
+                "Blockchain",
+                "TypeScript",
+                "Artificial Intelligence (AI)",
+                "Data Analyst"
+            ];
             const skillsContainer = document.getElementById('skills-container');
             skills.forEach(skill => {
                 const skillEl = document.createElement('div');
@@ -2692,7 +3030,90 @@
             }, { threshold: 0.1 });
             
             document.querySelectorAll('.section-hidden').forEach(section => observer.observe(section));
+            
+            // Initialize carousels
+            initializeCarousels();
         });
+
+        // Carousel functionality
+        let carouselStates = {};
+
+        function initializeCarousels() {
+            // Initialize VPM carousel
+            initializeCarousel('vpm-carousel', 12); // 12 images total
+            // Initialize Agriblock carousel
+            initializeCarousel('agriblock-carousel', 12); // 12 images total (agriblock.jpg + block1-11)
+            // Initialize ClassNDE carousel
+            initializeCarousel('classnde-carousel', 19); // 19 images total (Classnde 1-19)
+        }
+
+        function initializeCarousel(carouselId, totalSlides) {
+            carouselStates[carouselId] = {
+                currentSlide: 0,
+                totalSlides: totalSlides
+            };
+
+            // Create indicators
+            const indicatorsContainer = document.getElementById(carouselId.replace('-carousel', '-indicators'));
+            if (indicatorsContainer) {
+                indicatorsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const indicator = document.createElement('div');
+                    indicator.className = `carousel-indicator ${i === 0 ? 'active' : ''}`;
+                    indicator.onclick = () => goToSlide(carouselId, i);
+                    indicatorsContainer.appendChild(indicator);
+                }
+            }
+
+            // Auto-slide functionality (optional)
+            setInterval(() => {
+                nextSlide(carouselId);
+            }, 5000); // Change slide every 5 seconds
+        }
+
+        function nextSlide(carouselId) {
+            const state = carouselStates[carouselId];
+            if (!state) return;
+
+            state.currentSlide = (state.currentSlide + 1) % state.totalSlides;
+            updateCarouselDisplay(carouselId);
+        }
+
+        function prevSlide(carouselId) {
+            const state = carouselStates[carouselId];
+            if (!state) return;
+
+            state.currentSlide = (state.currentSlide - 1 + state.totalSlides) % state.totalSlides;
+            updateCarouselDisplay(carouselId);
+        }
+
+        function goToSlide(carouselId, slideIndex) {
+            const state = carouselStates[carouselId];
+            if (!state) return;
+
+            state.currentSlide = slideIndex;
+            updateCarouselDisplay(carouselId);
+        }
+
+        function updateCarouselDisplay(carouselId) {
+            const state = carouselStates[carouselId];
+            if (!state) return;
+
+            const carousel = document.getElementById(carouselId);
+            const indicators = document.getElementById(carouselId.replace('-carousel', '-indicators'));
+
+            if (carousel) {
+                const translateX = -state.currentSlide * 100;
+                carousel.style.transform = `translateX(${translateX}%)`;
+            }
+
+            if (indicators) {
+                const indicatorElements = indicators.querySelectorAll('.carousel-indicator');
+                indicatorElements.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === state.currentSlide);
+                });
+            }
+        }
     </script>
 </body>
 </html>
