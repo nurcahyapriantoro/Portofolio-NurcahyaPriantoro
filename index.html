@@ -1930,6 +1930,41 @@
         .dark .carousel-nav:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+
+        .pertamina-project-card {
+            border: 2px solid transparent;
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(249, 250, 251, 0.92)) padding-box,
+                linear-gradient(120deg, #ed1c24 0%, #ed1c24 33%, #00a651 33%, #00a651 66%, #00aeef 66%, #00aeef 100%) border-box;
+            box-shadow:
+                0 8px 25px rgba(237, 28, 36, 0.12),
+                0 8px 25px rgba(0, 174, 239, 0.08);
+        }
+
+        .pertamina-project-card:hover {
+            box-shadow:
+                0 16px 36px rgba(237, 28, 36, 0.2),
+                0 12px 30px rgba(0, 174, 239, 0.16);
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+
+        .pertamina-title {
+            color: #c8102e;
+        }
+
+        .dark .pertamina-project-card {
+            background:
+                linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(31, 41, 55, 0.92)) padding-box,
+                linear-gradient(120deg, #ed1c24 0%, #ed1c24 33%, #00a651 33%, #00a651 66%, #00aeef 66%, #00aeef 100%) border-box;
+            box-shadow:
+                0 8px 25px rgba(237, 28, 36, 0.22),
+                0 8px 25px rgba(0, 174, 239, 0.2);
+        }
+
+        .dark .pertamina-title {
+            color: #f87171;
+        }
     </style>
     </style>
 </head>
@@ -2026,7 +2061,7 @@
                             <div class="stat-label">Experiences</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">6</div>
+                            <div class="stat-number">7</div>
                             <div class="stat-label">Projects</div>
                         </div>
                         <div class="stat-card">
@@ -2123,7 +2158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500"><div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[41px] top-8 border-4 border-white dark:border-gray-900"></div><div class="flex flex-col md:flex-row gap-4"><div class="md:w-20 md:h-20 w-16 h-16 flex-shrink-0"><img src="assets/pba.png" alt="Polkadot Blockchain Academy" class="w-full h-full object-cover rounded-lg border-2 border-blue-500"></div><div class="flex-1"><p class="text-sm font-medium text-blue-600 dark:text-blue-400">May 2025 - Present</p><h3 class="text-lg font-bold mt-1">Student PBA-X, Wave 3</h3><p class="text-md font-semibold text-gray-600 dark:text-gray-400 mb-2">Polkadot Blockchain Academy - Remote</p><ul class="list-disc list-inside text-sm space-y-1 text-gray-700 dark:text-gray-300"><li>Engineered a custom blockchain from the ground up, utilizing Rust and the Substrate framework.</li><li>Developed custom runtime logic by mastering the FRAME pallet system.</li></ul></div></div></div>
+                    <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500"><div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[41px] top-8 border-4 border-white dark:border-gray-900"></div><div class="flex flex-col md:flex-row gap-4"><div class="md:w-20 md:h-20 w-16 h-16 flex-shrink-0"><img src="assets/pba.png" alt="Polkadot Blockchain Academy" class="w-full h-full object-cover rounded-lg border-2 border-blue-500"></div><div class="flex-1"><p class="text-sm font-medium text-blue-600 dark:text-blue-400">May 2025 - Aug 2025</p><h3 class="text-lg font-bold mt-1">Student PBA-X, Wave 3</h3><p class="text-md font-semibold text-gray-600 dark:text-gray-400 mb-2">Polkadot Blockchain Academy - Remote</p><ul class="list-disc list-inside text-sm space-y-1 text-gray-700 dark:text-gray-300"><li>Engineered a custom blockchain from the ground up, utilizing Rust and the Substrate framework.</li><li>Developed custom runtime logic by mastering the FRAME pallet system.</li></ul></div></div></div>
                     <div class="mb-10 card p-6 rounded-lg shadow-md -ml-12 border-l-4 border-blue-500">
                         <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[41px] top-8 border-4 border-white dark:border-gray-900"></div>
                         <div class="flex flex-col md:flex-row gap-4">
@@ -2200,6 +2235,77 @@
             <section id="projects" class="py-20 section-hidden">
                 <h2 class="text-3xl font-bold text-center mb-12">Project Experience</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                     <div class="card pertamina-project-card rounded-xl p-6 flex flex-col">
+                        <div class="mb-4">
+                            <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
+                                <div class="carousel-container" id="pis-auditor-carousel">
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/logoPIS.webp" alt="Pertamina International Shipping - Logo" class="w-full h-full object-contain rounded-lg bg-white">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.53.58.jpeg" alt="Auditor Dashboard - Screen 1" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.58.24 (1).jpeg" alt="Auditor Dashboard - Screen 2" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.58.24.jpeg" alt="Auditor Dashboard - Screen 3" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.59.35.jpeg" alt="Auditor Dashboard - Screen 4" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 16.59.41.jpeg" alt="Auditor Dashboard - Screen 5" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.00.44 (1).jpeg" alt="Auditor Dashboard - Screen 6" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.00.44 (2).jpeg" alt="Auditor Dashboard - Screen 7" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.00.44 (3).jpeg" alt="Auditor Dashboard - Screen 8" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.00.44.jpeg" alt="Auditor Dashboard - Screen 9" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.04.12.jpeg" alt="Auditor Dashboard - Screen 10" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="assets/PertaminaDashboardAuditor/WhatsApp Image 2026-04-06 at 17.06.29.jpeg" alt="Auditor Dashboard - Screen 11" class="w-full h-full object-cover rounded-lg">
+                                    </div>
+                                </div>
+                                <button class="carousel-nav carousel-prev" onclick="prevSlide('pis-auditor-carousel')">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-nav carousel-next" onclick="nextSlide('pis-auditor-carousel')">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-indicators" id="pis-auditor-indicators">
+                                    <!-- Indicators will be generated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold pertamina-title">Auditor Dashboard (Audit Monitoring Center)</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Pertamina International Shipping</p>
+                        <p class="flex-grow text-gray-700 dark:text-gray-300">Auditor Dashboard is an end-to-end audit findings monitoring web app: from Excel dataset upload, normalization, and metrics calculation (aging, deadline, risk level), to MySQL persistence and interactive analytics dashboard. The backend uses FastAPI for upload APIs, findings search, analytics/metrics, and audit trail on data refresh. The Next.js frontend provides dashboard views, findings table with filtering and export, chart guide, and optional cookie-based JWT authentication. This project applies a single-source dataset approach where each new upload resets previous findings and replaces them with the latest dataset.</p>
+                        <div class="mt-4 flex flex-wrap gap-2 items-center justify-between">
+                            <div>
+                                <span class="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 text-xs font-medium px-2.5 py-0.5 rounded-full">FastAPI</span>
+                                <span class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 text-xs font-medium px-2.5 py-0.5 rounded-full">SQLAlchemy</span>
+                                <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded-full">MySQL</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js 14</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                                <span class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">JWT Cookie Auth</span>
+                            </div>
+                            <div class="flex flex-col items-start md:items-end gap-2 mt-4 md:mt-0">
+                                <span class="text-xs font-semibold text-gray-600 dark:text-gray-300">Private Internal Project</span>
+                                <a href="https://github.com/nurcahyapriantoro/auditor_dashboard" target="_blank" class="btn-details">View Details (Private)</a>
+                            </div>
+                        </div>
+                     </div>
+
                      <div class="card rounded-xl p-6 flex flex-col">
                         <div class="mb-4">
                             <div class="relative w-full project-carousel" style="aspect-ratio: 16/9;">
@@ -3039,6 +3145,8 @@
         let carouselStates = {};
 
         function initializeCarousels() {
+            // Initialize Pertamina Auditor Dashboard carousel
+            initializeCarousel('pis-auditor-carousel', 12); // 12 images total (logo + 11 screenshots)
             // Initialize VPM carousel
             initializeCarousel('vpm-carousel', 12); // 12 images total
             // Initialize Agriblock carousel
