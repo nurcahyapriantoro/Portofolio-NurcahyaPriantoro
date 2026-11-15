@@ -65,7 +65,7 @@
   location: Bogor, Indonesia
   workMode: Hybrid
   start: '2026-08'
-  end: present
+  end: '2026-10'
   logo: ../assets/images/logos/ipb.png
   summary: >-
     Architected a Hyperledger Fabric permissioned blockchain network spanning four organizations —
