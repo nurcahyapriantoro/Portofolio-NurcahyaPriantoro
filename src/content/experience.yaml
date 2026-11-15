@@ -48,9 +48,7 @@
     - API MPMS Ch. 17
     - Digital Forensic Analytics
   gallery:
-    - type: video
-      videoSrc: /media/pertamina-internal-audit.mp4
-      poster: ../assets/images/experience/pertamina/internal-audit-video-poster.jpg
+    - src: ../assets/images/experience/pertamina/internal-audit-hq.png
       caption: Corporate presence · PT Pertamina (Persero) Internal Audit Holding HQ
     - src: ../assets/images/experience/pertamina/surveillance-ui.jpeg
       caption: Surveillance UI · Shewhart anomaly triage & custody transfer portal

@@ -71,7 +71,26 @@ const hasVideo = slides.some((s) => s.type === 'video');
             </span>
           </>
         ) : (
-          slide.src && (
+          slide.src &&
+          (slide.src.height > slide.src.width ? (
+            <>
+              <Image
+                src={slide.src}
+                alt=""
+                aria-hidden="true"
+                widths={[320]}
+                sizes="320px"
+                class="pointer-events-none absolute inset-0 h-full w-full scale-110 object-cover opacity-35 blur-xl"
+              />
+              <Image
+                src={slide.src}
+                alt={slide.alt}
+                widths={[480, 800, 1200]}
+                sizes="(max-width: 768px) 100vw, 600px"
+                class="relative z-10 h-full w-full object-contain"
+              />
+            </>
+          ) : (
             <Image
               src={slide.src}
               alt={slide.alt}
@@ -79,7 +98,7 @@ const hasVideo = slides.some((s) => s.type === 'video');
               sizes="(max-width: 768px) 100vw, 600px"
               class="h-full w-full object-cover"
             />
-          )
+          ))
         )}
       </div>
     ))}
