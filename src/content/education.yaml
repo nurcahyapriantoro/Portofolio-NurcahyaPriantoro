@@ -1,0 +1,21 @@
+main:
+  institution: Institut Pertanian Bogor (IPB University)
+  degree: Bachelor of Computer Science (S.Kom)
+  faculty: School of Data Science, Mathematics and Informatics
+  gpa: 3.25 / 4.00
+  location: Bogor, Indonesia
+  start: '2022-08'
+  end: '2026-07'
+  status: Graduated 2026
+  logo: ../assets/images/logos/ipb.png
+  photo: ../assets/images/profile/graduation.jpg
+  website: https://www.ipb.ac.id/
+  coursework:
+    - Data Structures & Algorithm Analysis
+    - Database Systems
+    - Software Engineering
+    - Artificial Intelligence
+    - System Analysis & Design
+    - Information Systems
+    - Object-Oriented Programming (Java)
+    - User Experience Design

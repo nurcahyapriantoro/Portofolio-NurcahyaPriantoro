@@ -1,0 +1,63 @@
+- id: pkm-pm-team
+  organization: PKM-PM Team, IPB University
+  role: Research & Community Development Team — IT Stream
+  period: Jan 2024 – Dec 2024
+  summary: >-
+    Developed technology-supported community solutions and evidence-based documentation, advancing
+    to National Finalist at the 37th PIMNAS.
+  logo: ../assets/images/logos/ipb.png
+  order: 1
+
+- id: ieee-ipb
+  organization: IEEE IPB Student Branch
+  role: Officer, Creative & Branding
+  period: Jan 2024 – Dec 2024
+  summary: >-
+    Developed and executed the visual brand strategy across digital platforms, reaching over 500
+    engineering and computer science students.
+  logo: ../assets/images/logos/ieee.jpg
+  certificateUrl: https://drive.google.com/file/d/19BuJwxC81WnWA-QjtBINuDngIdmus1a8/view?usp=sharing
+  order: 2
+
+- id: pkm-rsh-team
+  organization: PKM-RSH Research Team, IPB University
+  role: Lead — Data Analysis & IT Support
+  period: Jan 2023 – Dec 2023
+  topic: E-commerce Behavior & Gen Z Economic Independence
+  summary: >-
+    Managed IT workflows, extracted and visualized respondent datasets into stakeholder-ready
+    analytics, and secured competitive national DIKTI research funding.
+  logo: ../assets/images/logos/ipb.png
+  order: 3
+
+- id: pkm-center-ipb
+  organization: Suksessor Multimedia Adikarta Project — PKM Center IPB
+  role: Visual Design & Multimedia
+  period: Sep 2023 – Nov 2023
+  summary: >-
+    Designed promotional and instructional media assets for technical workshops and PKM student
+    teams across IPB University.
+  logo: ../assets/images/logos/pkm-center.jpg
+  order: 4
+
+- id: g-awarding-fmipa
+  organization: G-Awarding Night FMIPA — IPB University
+  role: Staff, Multimedia
+  period: Sep 2023 – Nov 2023
+  summary: >-
+    Led video editing and event visual concepts, increasing faculty-wide event branding engagement
+    by 15%.
+  logo: ../assets/images/logos/ipb.png
+  certificateUrl: https://drive.google.com/file/d/1Ex_ll6h197Zx17kTblS_-AIUNs-8Jw3F/view?usp=drive_link
+  order: 5
+
+- id: fesma-pku
+  organization: Festival Mahasiswa PKU — IPB University
+  role: Staff, Multimedia
+  period: Feb 2023 – Jul 2023
+  summary: >-
+    Achieved 50% Instagram follower growth for FESMA through strategic content planning and visual
+    production.
+  logo: ../assets/images/logos/ipb.png
+  certificateUrl: https://drive.google.com/file/d/1CPPSZJXXVQxpBFcKpDXG4alK4mOPwUUY/view?usp=drive_link
+  order: 6

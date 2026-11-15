@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon/components';
+import { withBase } from '@/lib/site';
+
+interface Props {
+  email: string;
+  cvPath: string;
+  linkedinUrl: string;
+}
+
+const { email, cvPath, linkedinUrl } = Astro.props;
+---
+
+<section aria-label="Contact Call to Action" class="py-16">
+  <div class="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-start justify-between gap-6 rounded-2xl border border-blue-200/80 bg-gradient-to-br from-blue-600 to-slate-900 p-8 text-white shadow-md sm:flex-row sm:items-center sm:p-10 dark:border-blue-900/60">
+      <div class="max-w-xl space-y-2">
+        <p class="text-xs font-semibold tracking-widest text-blue-200 uppercase">
+          Open to Opportunities
+        </p>
+        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">
+          Looking for a Data Engineer, Fullstack, or Blockchain Engineer?
+        </h2>
+        <p class="text-sm leading-relaxed text-blue-100">
+          Let's discuss how I can contribute to your data platform, risk surveillance, or software
+          engineering team.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href={`mailto:${email}?subject=${encodeURIComponent('Opportunity — Nurcahya Priantoro')}`}
+          class="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-xs transition hover:bg-blue-50"
+        >
+          <Icon name="lucide:mail" class="h-4 w-4 text-blue-600" aria-hidden="true" />
+          <span>Email Me</span>
+        </a>
+        <a
+          href={linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white backdrop-blur-xs transition hover:bg-white/20"
+        >
+          <Icon name="simple-icons:linkedin" class="h-4 w-4" aria-hidden="true" />
+          <span>LinkedIn</span>
+        </a>
+        <a
+          href={withBase(cvPath)}
+          download="Nurcahya_Priantoro_CV.pdf"
+          class="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white backdrop-blur-xs transition hover:bg-white/20"
+        >
+          <Icon name="lucide:file-down" class="h-4 w-4" aria-hidden="true" />
+          <span>CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

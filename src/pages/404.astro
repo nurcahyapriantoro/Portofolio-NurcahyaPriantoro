@@ -1,0 +1,36 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBase } from '@/lib/site';
+
+const profileEntry = await getEntry('profile', 'main');
+const p = profileEntry?.data;
+---
+
+<BaseLayout
+  title="404 — Page Not Found | Nurcahya Priantoro"
+  description="The requested page could not be found."
+  email={p?.email ?? 'nurcahyapriantoro23@gmail.com'}
+  socials={p?.socials.map((s) => s.href) ?? []}
+>
+  <main
+    id="main-content"
+    class="flex min-h-screen flex-col items-center justify-center px-6 text-center"
+  >
+    <p class="text-sm font-semibold tracking-widest text-blue-600 uppercase dark:text-blue-400">
+      404 Error
+    </p>
+    <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
+      Page not found
+    </h1>
+    <p class="mt-3 max-w-md text-sm text-slate-600 dark:text-slate-400">
+      The page you are looking for does not exist or has been moved.
+    </p>
+    <a
+      href={withBase('/')}
+      class="mt-6 inline-flex items-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700"
+    >
+      Back to Portfolio
+    </a>
+  </main>
+</BaseLayout>

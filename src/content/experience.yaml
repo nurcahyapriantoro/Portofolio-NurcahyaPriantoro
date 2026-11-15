@@ -1,0 +1,271 @@
+- id: pertamina-internal-audit
+  company: PT Pertamina (Persero)
+  role: Data Engineer Intern
+  department: Internal Audit (SPI) — Digital Forensic & Data Surveillance
+  type: Internship
+  category: professional
+  location: Jakarta Headquarters, Indonesia
+  workMode: On-site
+  start: '2026-10'
+  end: present
+  logo: ../assets/images/logos/pertamina.png
+  summary: >-
+    Built nationwide data surveillance pipelines for marine depot-to-depot custody transfers to
+    detect potential revenue leakage, temperature-related volume manipulation, and unusual
+    operating variances in real time, referencing API MPMS Chapter 17.
+  metrics:
+    - value: '100%'
+      label: Nationwide marine depot trips & bunker ops covered
+    - value: '<0.05%'
+      label: R1 shore-to-ship loading discrepancy threshold
+  highlights:
+    - title: Custody Transfer & Marine Trip Surveillance
+      text: >-
+        Built audit pipelines covering 100% of inter-depot tanker voyages and bunker transfers in
+        scope to detect operational losses in real time.
+    - title: Thermal Anomaly & Anti-Fraud Detection
+      text: >-
+        Reconciled shore and ship volumes at loading and discharge; flagged potential manipulation
+        of temperature and volume correction factors (VCF).
+    - title: Statistical Process Control (Shewhart Triage)
+      text: >-
+        Used Shewhart control charts and trip benchmarks to distinguish normal transit variation
+        from anomalies warranting forensic escalation.
+    - title: Real-Time Executive Audit Portal
+      text: >-
+        Built a FastAPI + Vite portal for senior SPI auditors to monitor loading discrepancies
+        against project thresholds (tracking live metrics such as 0.031% R1 variance).
+    - title: Enterprise Governance & Asset Protection
+      text: >-
+        Translated internal audit requirements into maintainable surveillance workflows helping
+        investigators prioritize and escalate potential losses.
+  tech:
+    - Python
+    - SQL
+    - FastAPI
+    - Vite
+    - Statistical Process Control
+    - API MPMS Ch. 17
+    - Digital Forensic Analytics
+  gallery:
+    - src: ../assets/images/experience/pertamina/internal-audit-hq.jpeg
+      caption: Corporate presence · PT Pertamina (Persero) Internal Audit Holding HQ
+    - src: ../assets/images/experience/pertamina/surveillance-ui.jpeg
+      caption: Surveillance UI · Shewhart anomaly triage & custody transfer portal
+    - src: ../assets/images/experience/pertamina/variance-monitoring.jpeg
+      caption: Engineering & monitoring · Real-time volumetric variance analytics
+  order: 1
+
+- id: brain-ipb-pekalongan
+  company: BRAIN IPB University × Pekalongan City Government
+  role: Blockchain Engineer
+  department: Permissioned Supply-Chain Governance (TKT 5)
+  type: Freelance
+  category: professional
+  location: Bogor, Indonesia
+  workMode: Hybrid
+  start: '2026-08'
+  end: present
+  logo: ../assets/images/logos/ipb.png
+  summary: >-
+    Architected a Hyperledger Fabric permissioned blockchain network spanning four organizations —
+    Fishermen, Fish Auction (TPI), Cold Storage, and DKP — for frozen-fish supply-chain governance.
+  metrics:
+    - value: '4 Orgs'
+      label: Multi-organization Hyperledger Fabric network
+    - value: '25 Steps'
+      label: End-to-end on-chain operational test suite
+  highlights:
+    - title: Smart Contracts & Integrity Controls
+      text: >-
+        Implemented Go chaincode for GPS catch records, automated >5% weighing-discrepancy
+        detection, auctions, 3% levies, invoices, and payment confirmation with SHA-256 audit trails.
+    - title: Backend, RBAC & Observability
+      text: >-
+        Built a NestJS 10 API with RS256 JWT authentication, five-role RBAC, and
+        Grafana/Prometheus observability for the functional TKT 5 prototype.
+    - title: Stakeholder Validation
+      text: >-
+        Created a 25-step on-chain end-to-end test suite to validate operational workflows with
+        BRAIN IPB University and Pekalongan City Government stakeholders.
+  tech: [Hyperledger Fabric, Go Chaincode, NestJS 10, JWT RS256, Grafana, Prometheus, Docker]
+  order: 2
+
+- id: rtrwhub
+  company: RTRWHUB
+  role: Fullstack Developer
+  department: Digital Resident Services Portal
+  type: Professional Project
+  category: professional
+  location: Remote
+  workMode: Remote
+  start: '2026-05'
+  end: '2026-07'
+  logo: ../assets/images/logos/ipb.png
+  summary: >-
+    Designed and delivered an end-to-end digital portal for RT/RW resident administration covering
+    letter requests, dues payments, issue reporting, announcements, schedules, and cash transparency.
+  highlights:
+    - title: Full-Stack Architecture & Notifications
+      text: >-
+        Developed with Next.js, TypeScript, PostgreSQL/Supabase, Drizzle ORM, and NextAuth,
+        including QR verification, PDF generation, push notifications, and WhatsApp alerts.
+    - title: Full SDLC Ownership
+      text: >-
+        Implemented RBAC, file validation, and database security; led full SDLC across 3+
+        enterprise and community client engagements from requirements to production deployment.
+  tech: [Next.js, TypeScript, PostgreSQL, Supabase, Drizzle ORM, NextAuth]
+  links:
+    - label: Live Portal
+      href: https://rtrwhub.vercel.app
+  order: 3
+
+- id: bank-indonesia
+  company: Bank Indonesia (Central Bank of Indonesia)
+  role: Data Engineer Intern
+  department: Payment System Surveillance Department (DSPK)
+  type: Apprenticeship
+  category: professional
+  location: Jakarta, Indonesia
+  workMode: On-site
+  start: '2025-09'
+  end: '2026-03'
+  logo: ../assets/images/logos/bank-indonesia.webp
+  summary: >-
+    Engineered an automated end-to-end media intelligence ecosystem for Bank Indonesia, replacing
+    manual monitoring with multi-platform scraping, Cloudera ETL, fine-tuned LLM classification, and
+    executive Power BI dashboards.
+  metrics:
+    - value: '90%+'
+      label: Sentiment classification accuracy (up from 75%)
+    - value: '600+'
+      label: Daily social data points ingested (TikTok, IG, X)
+  highlights:
+    - title: Automated Multi-Platform Scraping
+      text: >-
+        Built Python and Apify scraping pipelines collecting 100+ social-media comments every 4
+        hours (~600 data points/day) across TikTok, Instagram, and X.
+    - title: Cloudera Scalable ETL
+      text: >-
+        Designed Cloudera Data Platform ETL pipelines to ingest, clean, and process large-scale
+        unstructured text reliably for downstream media-intelligence analysis.
+    - title: LLM Sentiment Classification
+      text: >-
+        Integrated OpenAI GPT-4.1 Mini via Python for NLP sentiment analysis; iterative prompt
+        engineering improved accuracy from 75% to 90%+.
+    - title: FastAPI Services & Power BI
+      text: >-
+        Built FastAPI REST services to standardize cross-team inference access and delivered Power BI
+        dashboards tracking policy sentiment for senior management decisions.
+  tech: [Python, Apify, Cloudera, OpenAI GPT-4.1 Mini, FastAPI, Power BI, NLP]
+  gallery:
+    - src: ../assets/images/experience/bank-indonesia/present-powerbi.jpg
+      caption: Presenting Power BI media-intelligence dashboard to senior management
+    - src: ../assets/images/experience/bank-indonesia/build-pipeline.jpg
+      caption: Building and monitoring the media-intelligence ETL pipeline
+    - src: ../assets/images/experience/bank-indonesia/team-dspk.jpg
+      caption: Data & Surveillance Team — Payment System Surveillance Dept (DSPK)
+  order: 4
+
+- id: classnde-freelance
+  company: ClassNDE Online Learning Platform
+  role: Fullstack Developer
+  type: Freelance
+  category: professional
+  location: Remote
+  workMode: Remote
+  start: '2025-04'
+  end: '2025-10'
+  logo: ../assets/images/logos/ipb.png
+  summary: >-
+    Built an integrated Laravel 12 and PHP 8.2 e-learning and coaching platform with course
+    management, Midtrans payment gateway, Twilio video coaching, referrals, and admin RBAC.
+  highlights:
+    - title: Production E-Learning & Payments
+      text: >-
+        Delivered end-to-end course catalog, Midtrans checkout integration, Twilio API live video
+        coaching booking, referral tracking, and role-based administration.
+  tech: [Laravel 12, PHP 8.2, MySQL, Midtrans, Twilio API, Tailwind CSS]
+  links:
+    - label: Live Platform
+      href: https://guitarclassbynde.id/ndeofficial
+  order: 5
+
+- id: polkadot-academy
+  company: Polkadot Blockchain Academy
+  role: Student — PBA-X Wave 3
+  type: Program
+  category: program
+  location: Remote
+  workMode: Remote
+  start: '2025-05'
+  end: '2025-08'
+  logo: ../assets/images/logos/pba.png
+  summary: >-
+    Graduated as a certified blockchain developer in Wave 3 after engineering a custom Layer-1
+    blockchain from the ground up with Rust and Substrate.
+  highlights:
+    - title: Custom L1 Runtime Engineering
+      text: >-
+        Implemented custom state-transition functions and runtime logic using the Substrate FRAME
+        pallet system.
+    - title: Consensus & Governance
+      text: >-
+        Analyzed and applied BABE/GRANDPA consensus mechanisms, on-chain governance, protocol
+        security, and treasury systems.
+  tech: [Rust, Substrate, FRAME Pallets, BABE/GRANDPA, On-Chain Governance]
+  order: 6
+
+- id: bangkit-academy
+  company: Bangkit Academy 2024 (Google, GoTo, Traveloka)
+  role: Cloud Computing Cohort
+  type: Program
+  category: program
+  location: Remote
+  workMode: Remote
+  start: '2024-09'
+  end: '2025-01'
+  logo: ../assets/images/logos/bangkit.jpg
+  summary: >-
+    Completed a 900+ hour Google-led Cloud Computing curriculum and delivered the complete backend
+    and cloud infrastructure for a team capstone project on GCP, graduating with distinction.
+  metrics:
+    - value: '900+'
+      label: Intensive learning hours
+    - value: '94.5'
+      label: GCP Engineer & DevOps/SRE score
+  highlights:
+    - title: Cloud-Native Backend & Infrastructure
+      text: >-
+        Architected Compute, Storage, and API Gateway services on Google Cloud Platform for the
+        capstone application.
+    - title: Academic Distinction
+      text: >-
+        Scored 94.5 in GCP Engineer, 94.5 in DevOps/SRE, and 92.6 in JavaScript; graduated with
+        distinction.
+  tech: [Google Cloud Platform, Node.js, REST API, DevOps/SRE, Docker]
+  links:
+    - label: Certificate
+      href: https://drive.google.com/file/d/1rg974Pbgsf_bpXAR8_gPzpvBry5zSWaE/view?usp=drive_link
+  order: 7
+
+- id: idcamp-indosat
+  company: Indosat Ooredoo Hutchison Digital Camp (IDCamp)
+  role: Data Science & Gen AI Cohort
+  type: Program
+  category: program
+  location: Remote
+  workMode: Remote
+  start: '2023-09'
+  end: '2023-12'
+  logo: ../assets/images/logos/idcamp.png
+  summary: >-
+    Completed specialized training tracks in Data Science and Generative AI Engineering, building a
+    strong foundation in Python, SQL, and analytical workflows.
+  highlights:
+    - title: Python & SQL Data Workflows
+      text: >-
+        Developed proficiency in Python data manipulation, SQL database querying, and exploratory
+        data analysis.
+  tech: [Python, SQL, Data Science, Gen AI]
+  order: 8

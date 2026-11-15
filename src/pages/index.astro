@@ -1,0 +1,96 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Highlights from '@/components/sections/Highlights.astro';
+import About from '@/components/sections/About.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Projects from '@/components/sections/Projects.astro';
+import Skills from '@/components/sections/Skills.astro';
+import Education from '@/components/sections/Education.astro';
+import Certifications from '@/components/sections/Certifications.astro';
+import Awards from '@/components/sections/Awards.astro';
+import Organizations from '@/components/sections/Organizations.astro';
+import PortfolioPdf from '@/components/sections/PortfolioPdf.astro';
+import Contact from '@/components/sections/Contact.astro';
+
+const profileEntry = await getEntry('profile', 'main');
+const educationEntry = await getEntry('education', 'main');
+if (!profileEntry || !educationEntry) {
+  throw new Error('Missing required profile or education content entry.');
+}
+
+const p = profileEntry.data;
+const ed = educationEntry.data;
+
+const [experience, projects, skills, certifications, awards, organizations] = await Promise.all([
+  getCollection('experience'),
+  getCollection('projects'),
+  getCollection('skills'),
+  getCollection('certifications'),
+  getCollection('awards'),
+  getCollection('organizations'),
+]);
+
+const linkedin =
+  p.socials.find((s) => s.label === 'LinkedIn')?.href ??
+  'https://www.linkedin.com/in/nurcahya-priantoro/';
+---
+
+<BaseLayout
+  title={`${p.name} — ${p.headline}`}
+  description={p.summary}
+  email={p.email}
+  socials={p.socials.map((s) => s.href)}
+>
+  <Header shortMark={p.shortMark} cvPath={p.cvPath} />
+
+  <main id="main-content">
+    <Hero
+      name={p.name}
+      headline={p.headline}
+      degreeLine={p.degreeLine}
+      location={p.location}
+      email={p.email}
+      summary={p.summary}
+      statusBadge={p.statusBadge}
+      heroPhoto={p.heroPhoto}
+      cvPath={p.cvPath}
+      socials={p.socials}
+    />
+
+    <Highlights highlights={p.highlights} />
+
+    <About paragraphs={p.aboutParagraphs} competencies={p.competencies} aboutPhoto={p.aboutPhoto} />
+
+    <Experience items={experience} />
+
+    <Projects items={projects} />
+
+    <Skills items={skills} />
+
+    <Education education={ed} />
+
+    <Certifications items={certifications} />
+
+    <Awards items={awards} />
+
+    <Organizations items={organizations} />
+
+    <PortfolioPdf pdfPath={p.portfolioPdfPath} sizeLabel={p.portfolioPdfSizeLabel} />
+
+    <Contact email={p.email} cvPath={p.cvPath} linkedinUrl={linkedin} />
+  </main>
+
+  <Footer
+    name={p.name}
+    headline={p.headline}
+    location={p.location}
+    email={p.email}
+    cvPath={p.cvPath}
+    portfolioPdfPath={p.portfolioPdfPath}
+    socials={p.socials}
+  />
+</BaseLayout>

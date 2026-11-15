@@ -1,0 +1,65 @@
+main:
+  name: Nurcahya Priantoro
+  shortMark: NP
+  headline: Data Engineer · Fullstack Developer · Blockchain Engineer
+  roles:
+    - Data Engineer
+    - Fullstack Developer
+    - Blockchain Engineer
+  statusBadge:
+    text: Currently Intern at Internal Audit (Digital Forensic & Data Surveillance)
+    company: PT Pertamina (Persero)
+    logo: ../assets/images/logos/pertamina.png
+  degreeLine: Computer Science Graduate · IPB University · GPA 3.25 / 4.00
+  location: Jakarta, Indonesia
+  email: nurcahyapriantoro23@gmail.com
+  summary: >-
+    Computer Science graduate from IPB University with hands-on experience in internal audit data
+    surveillance, digital forensics, financial data engineering, full-stack web platforms, and
+    enterprise blockchain systems.
+  aboutParagraphs:
+    - >-
+      I build automated data pipelines, anomaly-detection workflows, and auditable full-stack
+      applications that translate complex operational and risk requirements into reliable,
+      measurable products.
+    - >-
+      Currently contributing to PT Pertamina (Persero) Internal Audit in Digital Forensic & Data
+      Surveillance, following my Data Engineer internship at Bank Indonesia (DSPK) and blockchain
+      governance work with BRAIN IPB University and the Pekalongan City Government.
+  competencies:
+    - Internal Audit Data Surveillance
+    - Digital Forensics Data Engineering
+    - ETL & Cloudera Data Pipelines
+    - NLP & LLM Integration
+    - Full-Stack Web (Next.js / FastAPI / Laravel)
+    - Hyperledger Fabric & Go Chaincode
+    - Risk Analytics & Validation Controls
+    - Cloud Engineering (GCP & Azure)
+  highlights:
+    - value: '90%+'
+      label: Sentiment Accuracy
+      detail: Boosted from 75% via iterative GPT-4.1 Mini prompt engineering at Bank Indonesia
+    - value: '600+'
+      label: Daily Data Points
+      detail: Automated multi-platform scraping & Cloudera ETL across TikTok, IG, and X
+    - value: '100%'
+      label: Marine Surveillance
+      detail: Nationwide inter-depot tanker & bunker custody-transfer coverage at Pertamina
+    - value: '3+'
+      label: Enterprise Clients
+      detail: End-to-end SDLC delivery across audit systems, corporate web, and e-learning
+  heroPhoto: ../assets/images/profile/headshot-formal.jpg
+  aboutPhoto: ../assets/images/profile/photo-ipb.jpg
+  cvPath: /files/cv-nurcahya-priantoro.pdf
+  portfolioPdfPath: /files/portfolio-nurcahya-priantoro.pdf
+  portfolioPdfSizeLabel: 12 MB · 8 Slides
+  socials:
+    - label: LinkedIn
+      href: https://www.linkedin.com/in/nurcahya-priantoro/
+      icon: simple-icons:linkedin
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro
+      icon: simple-icons:github
+    - label: Instagram
+      href: https://www.instagram.com/nurcahyapriantoro/
+      icon: simple-icons:instagram

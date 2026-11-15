@@ -1,0 +1,21 @@
+# Build & Astro
+node_modules/
+dist/
+.astro/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Private / Application-specific or local personal documents (do not commit to public repo)
+BFLP_Risk_Management_CV_ATS.pdf
+Half Body.jpeg
+Nurcahya Priantoro - *.jpeg
+Photo SKL.jpg
+Profile.jpg

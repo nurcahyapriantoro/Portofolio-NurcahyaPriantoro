@@ -1,0 +1,323 @@
+- id: audit-monitoring-center
+  title: Audit Monitoring Center
+  subtitle: Internal Audit Findings & Risk Analytics Portal
+  client: Pertamina International Shipping
+  period: Dec 2025 – Feb 2026
+  tier: featured
+  status: Internal / Private
+  logo: ../assets/images/logos/pis.webp
+  summary: >-
+    Centralized audit-monitoring platform automating Excel ingestion, aging/deadline calculations,
+    and risk-level prioritization with an atomic single-source dataset workflow.
+  bullets:
+    - FastAPI + SQLAlchemy + MySQL backend paired with a Next.js 14 & Tailwind CSS dashboard
+    - Atomic dataset upload replacing prior findings cleanly with validation controls
+    - JWT cookie authentication and role-based access control (RBAC)
+  tech: [FastAPI, SQLAlchemy, MySQL, Next.js 14, Tailwind CSS, JWT Auth]
+  images:
+    - src: ../assets/images/projects/audit-monitoring/mockup.jpg
+      alt: Audit Monitoring Center executive dashboard overview
+    - src: ../assets/images/projects/audit-monitoring/screen-01.jpeg
+      alt: Audit Monitoring Center screen 1
+    - src: ../assets/images/projects/audit-monitoring/screen-02.jpeg
+      alt: Audit Monitoring Center screen 2
+    - src: ../assets/images/projects/audit-monitoring/screen-03.jpeg
+      alt: Audit Monitoring Center screen 3
+    - src: ../assets/images/projects/audit-monitoring/screen-04.jpeg
+      alt: Audit Monitoring Center screen 4
+    - src: ../assets/images/projects/audit-monitoring/screen-05.jpeg
+      alt: Audit Monitoring Center screen 5
+    - src: ../assets/images/projects/audit-monitoring/screen-06.jpeg
+      alt: Audit Monitoring Center screen 6
+    - src: ../assets/images/projects/audit-monitoring/screen-07.jpeg
+      alt: Audit Monitoring Center screen 7
+    - src: ../assets/images/projects/audit-monitoring/screen-08.jpeg
+      alt: Audit Monitoring Center screen 8
+    - src: ../assets/images/projects/audit-monitoring/screen-09.jpeg
+      alt: Audit Monitoring Center screen 9
+    - src: ../assets/images/projects/audit-monitoring/screen-10.jpeg
+      alt: Audit Monitoring Center screen 10
+    - src: ../assets/images/projects/audit-monitoring/screen-11.jpeg
+      alt: Audit Monitoring Center screen 11
+  links:
+    - label: GitHub (Private)
+      href: https://github.com/nurcahyapriantoro/auditor_dashboard
+      kind: private
+  order: 1
+
+- id: ikan-beku-chain
+  title: Ikan Beku Chain — Frozen Fish Blockchain Governance
+  subtitle: Permissioned Supply-Chain Traceability (TKT 5 Prototype)
+  client: BRAIN IPB University × Pekalongan City Government
+  period: Aug 2026 – Present
+  tier: featured
+  status: Prototype
+  logo: ../assets/images/logos/ipb.png
+  summary: >-
+    Four-organization Hyperledger Fabric network (Fishermen, Fish Auction, Cold Storage, DKP)
+    enforcing transparent weighing, levy calculation, and immutable SHA-256 audit trails.
+  bullets:
+    - Go chaincode detecting >5% weighing discrepancies, auctions, 3% levies, and invoices
+    - NestJS 10 API with JWT RS256, 5-role RBAC, and Grafana/Prometheus monitoring
+    - Validated via a 25-step on-chain end-to-end test suite (159+ on-chain transactions)
+  tech: [Hyperledger Fabric, Go Chaincode, NestJS 10, JWT RS256, Grafana, Prometheus]
+  images:
+    - src: ../assets/images/projects/ikan-beku-chain/cover.jpg
+      alt: Ikan Beku Chain DKP monitoring dashboard and on-chain traceability trace view
+  order: 2
+
+- id: rtrwhub-portal
+  title: RTRWHUB Resident Portal
+  subtitle: Digital Neighborhood Administration & Cash Transparency
+  client: RTRWHUB (Community & Enterprise Portal)
+  period: May 2026 – Jul 2026
+  tier: featured
+  status: Live
+  summary: >-
+    Full-stack resident services platform covering digital letter requests, monthly dues, issue
+    reporting, announcements, schedules, and transparent neighborhood cash reporting.
+  bullets:
+    - Next.js, TypeScript, PostgreSQL/Supabase, Drizzle ORM, and NextAuth
+    - QR code letter verification, automated PDF generation, push & WhatsApp notifications
+    - Role-based access control, file validation, and production deployment on Vercel
+  tech: [Next.js, TypeScript, PostgreSQL, Supabase, Drizzle ORM, NextAuth]
+  images:
+    - src: ../assets/images/projects/rtrwhub/cover.jpg
+      alt: RTRWHUB resident portal login and resident dashboard interface
+  links:
+    - label: Live Website
+      href: https://rtrwhub.vercel.app
+      kind: live
+  order: 3
+
+- id: platform-agriblock
+  title: PlatformAgriblock
+  subtitle: Agricultural Supply-Chain Blockchain Platform
+  client: IPB University Research Project
+  period: Jan 2025 – Present
+  tier: featured
+  status: Prototype
+  summary: >-
+    Full-stack Hyperledger Fabric platform preventing data falsification and price manipulation in
+    agricultural supply chains via immutable farm-to-table smart contracts.
+  bullets:
+    - Go chaincode recording verifiable custody transfers and pricing events on-chain
+    - Next.js & Tailwind CSS analytics dashboard for end-to-end stakeholder verification
+  tech: [Hyperledger Fabric, Go Chaincode, Node.js, Next.js, TypeScript, Tailwind CSS]
+  images:
+    - src: ../assets/images/projects/agriblock/screen-01.jpg
+      alt: PlatformAgriblock overview
+    - src: ../assets/images/projects/agriblock/screen-02.jpg
+      alt: PlatformAgriblock dashboard
+    - src: ../assets/images/projects/agriblock/screen-03.jpg
+      alt: PlatformAgriblock supply chain tracking
+    - src: ../assets/images/projects/agriblock/screen-04.jpg
+      alt: PlatformAgriblock product registration
+    - src: ../assets/images/projects/agriblock/screen-05.jpg
+      alt: PlatformAgriblock blockchain verification
+    - src: ../assets/images/projects/agriblock/screen-06.jpg
+      alt: PlatformAgriblock transaction history
+    - src: ../assets/images/projects/agriblock/screen-07.jpg
+      alt: PlatformAgriblock analytics
+    - src: ../assets/images/projects/agriblock/screen-08.jpg
+      alt: PlatformAgriblock reports
+    - src: ../assets/images/projects/agriblock/screen-09.jpg
+      alt: PlatformAgriblock user management
+    - src: ../assets/images/projects/agriblock/screen-10.jpg
+      alt: PlatformAgriblock settings
+    - src: ../assets/images/projects/agriblock/screen-11.jpg
+      alt: PlatformAgriblock notifications
+    - src: ../assets/images/projects/agriblock/screen-12.jpg
+      alt: PlatformAgriblock system logs
+  links:
+    - label: Watch Demo
+      href: https://youtu.be/U8q_MPmEqMs
+      kind: demo
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro/PlatformAgriblock
+      kind: github
+  order: 4
+
+- id: vpm-company-profile
+  title: VPM Company Profile & CMS
+  subtitle: Corporate Web Platform on Microsoft Azure
+  client: Performa Vista Media
+  period: Aug 2025 – Sep 2025
+  tier: featured
+  status: Production
+  summary: >-
+    Next.js 14 App Router corporate platform with a self-service admin dashboard for managing
+    galleries, promotions, testimonials, and client inquiries.
+  bullets:
+    - Built with TypeScript, Prisma ORM, and NextAuth authentication
+    - Deployed on Azure App Service with Azure Database for PostgreSQL and Azure Blob Storage
+  tech: [Next.js 14, TypeScript, Prisma ORM, NextAuth, Azure App Service, PostgreSQL]
+  images:
+    - src: ../assets/images/projects/vpm/screen-01.jpg
+      alt: VPM Company Profile homepage
+    - src: ../assets/images/projects/vpm/screen-02.jpg
+      alt: VPM admin dashboard
+    - src: ../assets/images/projects/vpm/screen-03.jpg
+      alt: VPM gallery management
+    - src: ../assets/images/projects/vpm/screen-04.jpg
+      alt: VPM promotions page
+    - src: ../assets/images/projects/vpm/screen-05.jpg
+      alt: VPM contact form
+    - src: ../assets/images/projects/vpm/screen-06.jpg
+      alt: VPM about page
+    - src: ../assets/images/projects/vpm/screen-07.jpg
+      alt: VPM services section
+    - src: ../assets/images/projects/vpm/screen-08.jpg
+      alt: VPM testimonials
+    - src: ../assets/images/projects/vpm/screen-09.jpg
+      alt: VPM user management
+    - src: ../assets/images/projects/vpm/screen-10.jpg
+      alt: VPM settings
+    - src: ../assets/images/projects/vpm/screen-11.jpg
+      alt: VPM reports
+    - src: ../assets/images/projects/vpm/screen-12.jpg
+      alt: VPM analytics
+  links:
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro/vpm-company-profile
+      kind: github
+  order: 5
+
+- id: classnde-platform
+  title: ClassNDE Online Learning Platform
+  subtitle: Integrated E-Learning, Payments & Live Video Coaching
+  client: ClassNDE
+  period: Apr 2025 – Oct 2025
+  tier: featured
+  status: Live
+  summary: >-
+    Production Laravel 12 & PHP 8.2 learning platform combining structured video courses, Midtrans
+    payment processing, Twilio live video coaching, and a referral engine.
+  bullets:
+    - Integrated Midtrans checkout and real-time 1-on-1 Twilio API video coaching
+    - Multi-role admin dashboard for courses, transactions, referrals, and analytics
+  tech: [Laravel 12, PHP 8.2, MySQL, Twilio API, Midtrans, Tailwind CSS]
+  images:
+    - src: ../assets/images/projects/classnde/screen-01.jpg
+      alt: ClassNDE homepage
+    - src: ../assets/images/projects/classnde/screen-02.jpg
+      alt: ClassNDE dashboard
+    - src: ../assets/images/projects/classnde/screen-03.jpg
+      alt: ClassNDE course catalog
+    - src: ../assets/images/projects/classnde/screen-04.jpg
+      alt: ClassNDE video learning
+    - src: ../assets/images/projects/classnde/screen-05.jpg
+      alt: ClassNDE progress tracking
+    - src: ../assets/images/projects/classnde/screen-06.jpg
+      alt: ClassNDE coaching booking
+    - src: ../assets/images/projects/classnde/screen-07.jpg
+      alt: ClassNDE video coaching
+    - src: ../assets/images/projects/classnde/screen-08.jpg
+      alt: ClassNDE payment gateway
+    - src: ../assets/images/projects/classnde/screen-09.jpg
+      alt: ClassNDE transaction history
+    - src: ../assets/images/projects/classnde/screen-10.jpg
+      alt: ClassNDE referral system
+    - src: ../assets/images/projects/classnde/screen-11.jpg
+      alt: ClassNDE admin dashboard
+    - src: ../assets/images/projects/classnde/screen-12.jpg
+      alt: ClassNDE user management
+    - src: ../assets/images/projects/classnde/screen-13.jpg
+      alt: ClassNDE content management
+    - src: ../assets/images/projects/classnde/screen-14.jpg
+      alt: ClassNDE analytics
+    - src: ../assets/images/projects/classnde/screen-15.jpg
+      alt: ClassNDE reports
+    - src: ../assets/images/projects/classnde/screen-16.jpg
+      alt: ClassNDE settings
+    - src: ../assets/images/projects/classnde/screen-17.jpg
+      alt: ClassNDE notifications
+    - src: ../assets/images/projects/classnde/screen-18.jpg
+      alt: ClassNDE profile management
+    - src: ../assets/images/projects/classnde/screen-19.jpg
+      alt: ClassNDE mobile responsive view
+  links:
+    - label: Live Platform
+      href: https://guitarclassbynde.id/ndeofficial
+      kind: live
+  order: 6
+
+- id: kopindosat-corporate
+  title: Kopindosat Corporate Website
+  subtitle: Corporate Profile, Member Services & Portal
+  client: Koperasi Pegawai Indosat (Kopindosat)
+  period: Feb 2026 – Apr 2026
+  tier: featured
+  status: Production
+  placeholderTheme: indigo
+  summary: >-
+    Full corporate website for Koperasi Pegawai Indosat featuring company profile, member services
+    (loans & investments), six business lines, news, career portal, and member login.
+  bullets:
+    - Custom zero-code theme-options architecture enabling non-technical admin content updates
+    - Integrated WPForms member inquiries, career applications, and MySQL-backed portal
+  tech: [WordPress, PHP, Tailwind CSS, WPForms, MySQL]
+  order: 7
+
+- id: ipb-stress-meter
+  title: IPBStress Meter
+  subtitle: Fuzzy Logic Web Application
+  client: Academic / Web Project
+  period: '2024'
+  tier: other
+  status: Live
+  summary: >-
+    Web application assessing student stress levels using a Fuzzy Inference System with an
+    interactive Tailwind CSS interface.
+  tech: [Python, Scikit-fuzzy, Tailwind CSS]
+  images:
+    - src: ../assets/images/projects/other/ipb-stress-meter.jpg
+      alt: IPBStress Meter web application
+  links:
+    - label: Live Site
+      href: https://nurcahyapriantoro.github.io/IPBStressMeter/
+      kind: live
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro/IPBStressMeter
+      kind: github
+  order: 8
+
+- id: ipb-mobile-seminar
+  title: Seminar Integration Module
+  subtitle: IPB Mobile Student — UI/UX System Design
+  client: Academic / UI/UX Project
+  period: '2024'
+  tier: other
+  status: Academic
+  summary: >-
+    System analysis and high-fidelity Figma prototypes integrating a university seminar portal into
+    the IPB Mobile Student app.
+  tech: [Figma, Miro, UI/UX Design]
+  images:
+    - src: ../assets/images/projects/other/ipb-mobile-seminar.png
+      alt: IPB Mobile Seminar Integration UI/UX prototype
+  links:
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro/IPB-Mobile-Seminar-Integration
+      kind: github
+  order: 9
+
+- id: ticket-resale-ecommerce
+  title: E-Commerce Ticket Resale
+  subtitle: Full-Stack Marketplace Project
+  client: Academic / Web Project
+  period: '2024'
+  tier: other
+  status: Academic
+  summary: >-
+    Secure ticket resale marketplace engineered with Laravel (PHP), MySQL, and a responsive
+    Tailwind CSS front end.
+  tech: [Laravel, PHP, MySQL, Tailwind CSS]
+  images:
+    - src: ../assets/images/projects/other/ticket-resale.jpeg
+      alt: E-Commerce Ticket Resale platform interface
+  links:
+    - label: GitHub
+      href: https://github.com/nurcahyapriantoro/E-Commerce-Jual-Beli-Tiket-Bekas-Calo
+      kind: github
+  order: 10

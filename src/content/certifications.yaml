@@ -1,0 +1,147 @@
+- id: azure-ai-fundamentals
+  title: Microsoft Certified — Azure AI Fundamentals (AI-900)
+  issuer: Microsoft
+  issuerGroup: Microsoft
+  issued: Nov 2025
+  featured: true
+  badgeImage: ../assets/images/logos/azure-ai.png
+  highlights:
+    - Applied ML, responsible AI, and Azure AI services
+    - Risk-aware data solution design
+  credentialUrl: https://www.credly.com/badges/fba8942a-249b-445f-81d2-c0eccdf61695/linked_in_profile
+  order: 1
+
+- id: pba-x-wave-3
+  title: Polkadot Blockchain Academy — PBA-X Wave 3
+  issuer: Polkadot Blockchain Academy / Mandala
+  issuerGroup: Blockchain & Cloud
+  issued: Jul 2025
+  featured: true
+  badgeImage: ../assets/images/logos/pba.png
+  highlights:
+    - Rust & Substrate FRAME runtime engineering
+    - BABE/GRANDPA consensus, governance, and protocol security
+  order: 2
+
+- id: bangkit-cloud-computing
+  title: Bangkit Academy 2024 — Cloud Computing Learning Path
+  issuer: Bangkit Academy (Google, GoTo, Traveloka)
+  issuerGroup: Blockchain & Cloud
+  issued: Jan 2025
+  featured: true
+  badgeImage: ../assets/images/logos/bangkit.jpg
+  highlights:
+    - 900+ learning hours · Full Graduate with Distinction
+    - Scores — GCP Engineer 94.5 · DevOps/SRE 94.5 · JavaScript 92.6
+  credentialUrl: https://drive.google.com/file/d/1rg974Pbgsf_bpXAR8_gPzpvBry5zSWaE/view?usp=drive_link
+  order: 3
+
+- id: idcamp-indosat
+  title: IDCamp Indosat — Gen AI Engineer & Data Science Paths
+  issuer: Indosat Ooredoo Hutchison Digital Camp
+  issuerGroup: IDCamp
+  issued: Dec 2023
+  featured: false
+  badgeImage: ../assets/images/logos/idcamp.png
+  highlights:
+    - Python, SQL, data manipulation, and generative AI workflows
+  order: 4
+
+- id: dicoding-python
+  title: Memulai Pemrograman dengan Python
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: simple-icons:python
+  credentialUrl: https://www.dicoding.com/certificates/JMZV13QRRXN9
+  order: 5
+
+- id: dicoding-sql
+  title: Belajar Dasar Structured Query Language (SQL)
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: lucide:database
+  credentialUrl: https://www.dicoding.com/certificates/2VX361NR3XYQ
+  order: 6
+
+- id: dicoding-data-science
+  title: Belajar Dasar Data Science
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Sep 2023
+  icon: lucide:line-chart
+  credentialUrl: https://www.dicoding.com/certificates/QLZ9R2397P5D
+  order: 7
+
+- id: dicoding-web
+  title: Belajar Dasar Pemrograman Web
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: lucide:globe
+  credentialUrl: https://www.dicoding.com/certificates/53XEQEWKRXRN
+  order: 8
+
+- id: dicoding-gcp-engineer
+  title: Menjadi Google Cloud Engineer
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: simple-icons:googlecloud
+  credentialUrl: https://www.dicoding.com/certificates/JMZV40K4JXN9
+  order: 9
+
+- id: dicoding-gcp-backend
+  title: Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: lucide:cloud
+  credentialUrl: https://www.dicoding.com/certificates/81P245MOOZOY
+  order: 10
+
+- id: dicoding-js
+  title: Belajar Dasar Pemrograman JavaScript
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: simple-icons:javascript
+  credentialUrl: https://www.dicoding.com/certificates/2VX345LYJZYQ
+  order: 11
+
+- id: dicoding-ai
+  title: Belajar Dasar AI
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: lucide:brain
+  credentialUrl: https://www.dicoding.com/certificates/NVP74306GPR0
+  order: 12
+
+- id: dicoding-ml-gcp
+  title: Belajar Penerapan Machine Learning dengan Google Cloud
+  issuer: Dicoding Indonesia
+  issuerGroup: Dicoding
+  issued: Dicoding Academy
+  icon: lucide:cpu
+  credentialUrl: https://www.dicoding.com/certificates/NVP74D584PR0
+  order: 13
+
+- id: linkedin-blockchain-start
+  title: Getting Started in Blockchain
+  issuer: LinkedIn Learning
+  issuerGroup: LinkedIn
+  issued: LinkedIn Learning
+  icon: lucide:link
+  credentialUrl: https://www.linkedin.com/learning/certificates/d4a96749a4c30d0d62194ebd87fa13b784a02a1f55b72b16b2d0f49e1412574f
+  order: 14
+
+- id: linkedin-blockchain-dev
+  title: Become a Blockchain Developer
+  issuer: LinkedIn Learning
+  issuerGroup: LinkedIn
+  issued: LinkedIn Learning
+  icon: lucide:blocks
+  credentialUrl: https://www.linkedin.com/learning/certificates/01d8f1409a42262cd2f97bf283d2880d2738a4f60450b4a8a1d3f1feb0843241
+  order: 15

@@ -1,108 +1,71 @@
-# 🌟 Portfolio Nurcahya Priantoro
+# Portfolio — Nurcahya Priantoro
 
-Selamat datang di portfolio website saya! Website ini menampilkan perjalanan, proyek, dan keahlian saya dalam bidang teknologi dan pengembangan.
+Personal portfolio website for **Nurcahya Priantoro** (Computer Science Graduate, IPB University · Data Engineer · Fullstack Developer · Blockchain Engineer).
 
-## 📋 Deskripsi
+Live site: [https://nurcahyapriantoro.github.io/Portofolio-NurcahyaPriantoro/](https://nurcahyapriantoro.github.io/Portofolio-NurcahyaPriantoro/)
 
-Portfolio ini adalah website personal yang dirancang untuk menampilkan:
-- **Profil Profesional** - Informasi tentang latar belakang dan pengalaman saya
-- **Proyek Portfolio** - Koleksi proyek-proyek yang telah saya kerjakan
-- **Keahlian & Teknologi** - Skills dan teknologi yang saya kuasai
-- **Pengalaman** - Riwayat pendidikan dan pengalaman kerja
-- **Kontak** - Informasi untuk menghubungi saya
+## Tech Stack
 
-## 🚀 Fitur
+- **Framework:** [Astro](https://astro.build/) (Static Site Generation) + TypeScript (`strictest`)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with light-first corporate theme & dark mode toggle
+- **Content Layer:** Typed YAML collections validated with Zod (`src/content.config.ts`)
+- **Assets & Icons:** Astro built-in `sharp` image pipeline (AVIF/WebP + responsive `srcset`), self-hosted Inter Variable font (`@fontsource-variable/inter`), and inline SVG icons (`astro-icon`)
+- **Quality & CI/CD:** ESLint (`typescript-eslint` + `eslint-plugin-astro` + `jsx-a11y`), Prettier, and GitHub Actions deployment to GitHub Pages
 
-- ✨ **Responsive Design** - Optimal di semua perangkat (desktop, tablet, mobile)
-- 🌙 **Dark/Light Mode** - Toggle tema terang dan gelap
-- 🎨 **Modern UI/UX** - Desain yang clean dan profesional
-- ⚡ **Fast Loading** - Optimasi performa untuk loading yang cepat
-- 🔄 **Smooth Animations** - Animasi yang halus dan interaktif
-- 📱 **Mobile Friendly** - Tampilan yang optimal di perangkat mobile
+## Project Structure
 
-## 🛠️ Teknologi yang Digunakan
-
-- **HTML5** - Struktur website
-- **CSS3** - Styling dan layout
-- **JavaScript** - Interaktivitas dan animasi
-- **Tailwind CSS** - Framework CSS utility-first
-- **Font Awesome** - Icon library
-- **Google Fonts** - Typography (Poppins, Roboto, Open Sans, Montserrat)
-
-## 📁 Struktur Proyek
-
-```
-Portfolio/
-├── index.html          # File utama website
-├── assets/             # Folder assets
-│   ├── agriblock.jpg   # Gambar proyek AgriBlock
-│   ├── bangkit.jpg     # Gambar program Bangkit
-│   ├── batiknese.jpg   # Gambar proyek Batiknese
-│   ├── calo.jpeg       # Gambar proyek Calo
-│   ├── idcamp.png      # Gambar program IDCamp
-│   ├── ieee.jpg        # Gambar organisasi IEEE
-│   ├── ipb.jpg         # Gambar IPB
-│   ├── pba.png         # Gambar PBA
-│   ├── PHOTO.jpg       # Foto profil
-│   └── ...             # Gambar lainnya
-└── README.md           # Dokumentasi proyek
+```text
+├── .github/workflows/deploy.yml   # GitHub Actions → GitHub Pages
+├── public/
+│   ├── files/                     # Downloadable CV & Portfolio PDF
+│   ├── favicon.svg
+│   └── robots.txt
+├── src/
+│   ├── assets/images/             # Optimized images (logos, experience, projects, awards)
+│   ├── components/
+│   │   ├── layout/                # Header, Footer, ThemeToggle
+│   │   ├── sections/              # Hero, Highlights, About, Experience, Projects, Skills,
+│   │   │                          # Education, Certifications, Awards, Organizations, PortfolioPdf, Contact
+│   │   └── ui/                    # Reusable Section, Badge, LogoMark, Carousel
+│   ├── content/                   # Structured YAML data (profile, experience, projects, ...)
+│   ├── layouts/BaseLayout.astro   # SEO, Open Graph, JSON-LD Person schema, theme init
+│   ├── lib/                       # Date formatting & base-path helpers
+│   ├── pages/                     # index.astro & 404.astro
+│   ├── scripts/                   # Lightweight progressive-enhancement modules (theme, nav, carousel, filter)
+│   ├── styles/global.css          # Tailwind v4 design tokens & reduced-motion support
+│   └── content.config.ts          # Zod schemas for all content collections
+└── astro.config.mjs
 ```
 
-## 🎯 Cara Menggunakan
+## Updating Content
 
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/nurcahyapriantoro/Portofolio-NurcahyaPriantoro.git
-   ```
+All portfolio data is separated from presentation in `src/content/*.yaml` and validated automatically during build:
 
-2. **Buka Folder Proyek**
-   ```bash
-   cd Portofolio-NurcahyaPriantoro
-   ```
+- `src/content/profile.yaml` — Hero headline, summary, status badge, highlights, contact & social links
+- `src/content/experience.yaml` — Work experience, metrics, and engineering cohorts
+- `src/content/projects.yaml` — Featured and additional projects
+- `src/content/skills.yaml` — Categorized technical skills
+- `src/content/education.yaml` — University degree, GPA, and coursework
+- `src/content/certifications.yaml` — Certifications & verification links
+- `src/content/awards.yaml` — Honors & awards
+- `src/content/organizations.yaml` — Campus & community leadership
 
-3. **Jalankan Website**
-   - Buka file `index.html` di browser
-   - Atau gunakan live server untuk development
+## Local Development
 
-## 🌐 Live Demo
+```bash
+npm ci
+npm run dev       # Start local dev server
+npm run check     # TypeScript + Zod content schema check
+npm run lint      # ESLint + Astro + Accessibility checks
+npm run format    # Format with Prettier
+npm run build     # Build static production site to ./dist
+npm run preview   # Preview production build locally
+```
 
-Website dapat diakses secara online di: [GitHub Pages](https://nurcahyapriantoro.github.io/Portofolio-NurcahyaPriantoro/)
+## Deployment (GitHub Pages)
 
-## 📧 Kontak
-
-- **Email**: [nurcahyapriantoro@email.com]
-- **LinkedIn**: [LinkedIn Profile]
-- **GitHub**: [https://github.com/nurcahyapriantoro](https://github.com/nurcahyapriantoro)
-- **Instagram**: [Instagram Profile]
-
-## 🤝 Kontribusi
-
-Jika Anda menemukan bug atau memiliki saran untuk perbaikan, silakan:
-1. Fork repository ini
-2. Buat branch untuk fitur baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
-## 📝 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail lebih lanjut.
-
-## 🙏 Acknowledgments
-
-- Terima kasih kepada semua yang telah memberikan inspirasi dan dukungan
-- Icons dari [Font Awesome](https://fontawesome.com/)
-- Fonts dari [Google Fonts](https://fonts.google.com/)
-- Framework CSS dari [Tailwind CSS](https://tailwindcss.com/)
-
----
-
-⭐ **Jika Anda menyukai proyek ini, jangan lupa berikan star!** ⭐
-
----
-
-*Dibuat dengan ❤️ oleh Nurcahya Priantoro*
-
+Pushes to `main` automatically build and deploy `./dist` via `.github/workflows/deploy.yml`.
+In repository settings, ensure **Settings → Pages → Build and deployment → Source** is set to **GitHub Actions**.
 
 ---
 
@@ -110,6 +73,6 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE unt
 
 [![Made by CocoTech](https://img.shields.io/badge/Made%20by-CocoTech%20Studio-7C3AED?style=flat-square&logo=vercel&logoColor=white)](https://cocotech.studio)
 
-*Built with passion · [cocotech.studio](https://cocotech.studio)*
+_Built with passion · [cocotech.studio](https://cocotech.studio)_
 
 </div>

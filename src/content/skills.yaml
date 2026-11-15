@@ -1,0 +1,80 @@
+- id: languages
+  category: Programming Languages
+  icon: lucide:code-2
+  items: [Python, TypeScript, JavaScript (Node.js), Go, PHP, SQL]
+  order: 1
+
+- id: data-engineering
+  category: Data Engineering & ETL
+  icon: lucide:workflow
+  items:
+    - ETL Pipeline Design
+    - Cloudera Data Platform
+    - Pandas
+    - NumPy
+    - Data Cleaning & Validation
+    - Feature Engineering
+    - EDA
+    - Apify Scraping
+  order: 2
+
+- id: risk-audit
+  category: Risk & Audit Analytics
+  icon: lucide:shield-check
+  items:
+    - Internal Audit Data Surveillance
+    - Digital Forensics Engineering
+    - Statistical Process Control (Shewhart)
+    - API MPMS Ch. 17
+    - Fraud Risk Indicators
+    - Compliance Monitoring
+    - Anomaly Triage
+  order: 3
+
+- id: databases
+  category: Databases & ORMs
+  icon: lucide:database
+  items: [PostgreSQL, MySQL, Supabase, SQLite, Drizzle ORM, Prisma ORM, SQLAlchemy]
+  order: 4
+
+- id: ai-ml
+  category: AI, ML & NLP
+  icon: lucide:brain-circuit
+  items:
+    - OpenAI GPT-4.1 Integration
+    - Prompt Engineering
+    - NLP & Sentiment Analysis
+    - Scikit-learn
+    - Scikit-fuzzy
+    - AI/ML Fundamentals
+  order: 5
+
+- id: backend
+  category: Backend & Security
+  icon: lucide:server
+  items: [FastAPI, NestJS 10, Node.js, Laravel 12, RESTful API Design, JWT RS256, RBAC]
+  order: 6
+
+- id: frontend-bi
+  category: Frontend & BI
+  icon: lucide:layout-dashboard
+  items: [Next.js, React, Astro, Tailwind CSS, Power BI, Chart.js, Responsive Web Design]
+  order: 7
+
+- id: cloud-devops
+  category: Cloud & DevOps
+  icon: lucide:cloud
+  items: [Google Cloud Platform (GCP), Microsoft Azure, Docker, Git, Grafana, Prometheus, PM2]
+  order: 8
+
+- id: blockchain
+  category: Blockchain & DLT
+  icon: lucide:blocks
+  items:
+    - Hyperledger Fabric
+    - Go Chaincode
+    - Polkadot / Substrate
+    - Rust
+    - Smart Contracts
+    - On-Chain Governance
+  order: 9

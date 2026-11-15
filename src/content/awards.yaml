@@ -1,0 +1,40 @@
+- id: pimnas-37
+  title: National Finalist — 37th PIMNAS (PKM-PM)
+  organizer: Ministry of Education, Culture, Research & Technology (DIKTI)
+  year: '2024'
+  description: >-
+    Led a multidisciplinary team to the national finals of Indonesia's premier student research and
+    community-empowerment competition, delivering evidence-based technical and field outcomes.
+  image: ../assets/images/awards/pimnas.jpg
+  links:
+    - label: View Journal
+      href: https://journal.ipb.ac.id/index.php/j-agrokreatif/article/view/59552
+    - label: Certificate
+      href: https://drive.google.com/file/d/1uuOxaR1qWG1nWyzn2OpCTQQAvhtsaHtx/view?usp=sharing
+  order: 1
+
+- id: business-of-the-year
+  title: 3rd Place — Business of The Year
+  organizer: IPB Student Entrepreneurship Program (Mahasiswa Wirausaha)
+  year: '2024'
+  description: >-
+    Awarded 3rd place for building and pitching a viable student venture (Batiknese) with
+    measurable traction and commercial execution.
+  image: ../assets/images/awards/batiknese.jpg
+  links:
+    - label: Certificate
+      href: https://drive.google.com/file/d/1GYj4AJYTU21eCoAn-cXVW5edroU8MK6_/view?usp=sharing
+  order: 2
+
+- id: pkm-rsh-grant
+  title: Competitive Funding Recipient — PKM-RSH
+  organizer: Ministry of Education, Culture, Research & Technology (DIKTI)
+  year: '2023'
+  description: >-
+    Secured national research funding as Lead for Data Analysis & IT Support investigating
+    e-commerce behavior and Gen Z economic independence.
+  image: ../assets/images/awards/rsh.jpg
+  links:
+    - label: Certificate
+      href: https://drive.google.com/file/d/1Dpq26SMxYdjdDGk8oVZhOWAolZQIGDul/view?usp=drive_link
+  order: 3

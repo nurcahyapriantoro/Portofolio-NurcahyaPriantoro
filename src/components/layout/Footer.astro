@@ -1,0 +1,112 @@
+---
+import { Icon } from 'astro-icon/components';
+import { NAV_ITEMS, withBase } from '@/lib/site';
+
+interface Props {
+  name: string;
+  headline: string;
+  location: string;
+  email: string;
+  cvPath: string;
+  portfolioPdfPath: string;
+  socials: Array<{ label: string; href: string; icon: string }>;
+}
+
+const { name, headline, location, email, cvPath, portfolioPdfPath, socials } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
+  <div class="mx-auto max-w-6xl px-5 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div class="space-y-3">
+        <p class="text-lg font-bold text-slate-900 dark:text-white">{name}</p>
+        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+          {headline}. Computer Science Graduate from IPB University building scalable data
+          pipelines, internal audit surveillance systems, and full-stack platforms.
+        </p>
+        <p class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
+          <Icon
+            name="lucide:map-pin"
+            class="h-3.5 w-3.5 text-blue-600 dark:text-blue-400"
+            aria-hidden="true"
+          />
+          <span>{location}</span>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-wider text-slate-900 uppercase dark:text-white">
+          Navigation
+        </h3>
+        <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+          {NAV_ITEMS.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class="text-slate-600 transition hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href={withBase(cvPath)}
+              download="Nurcahya_Priantoro_CV.pdf"
+              class="text-slate-600 transition hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
+            >
+              Download CV
+            </a>
+          </li>
+          <li>
+            <a
+              href={withBase(portfolioPdfPath)}
+              download="Portfolio-Nurcahya-Priantoro.pdf"
+              class="text-slate-600 transition hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
+            >
+              Download Portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h3 class="text-xs font-semibold tracking-wider text-slate-900 uppercase dark:text-white">
+          Connect
+        </h3>
+        <a
+          href={`mailto:${email}`}
+          class="inline-flex items-center gap-2 text-sm font-medium text-slate-700 transition hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+        >
+          <Icon
+            name="lucide:mail"
+            class="h-4 w-4 text-blue-600 dark:text-blue-400"
+            aria-hidden="true"
+          />
+          <span>{email}</span>
+        </a>
+        <div class="flex items-center gap-2.5">
+          {socials.map((s) => (
+            <a
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              class="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-slate-600 transition hover:border-blue-600 hover:text-blue-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-400 dark:hover:text-blue-400"
+            >
+              <Icon name={s.icon} class="h-4 w-4" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row dark:border-slate-800 dark:text-slate-400">
+      <p>
+        &copy; {year} {name}. All rights reserved.
+      </p>
+      <p>Built with Astro, TypeScript &amp; Tailwind CSS</p>
+    </div>
+  </div>
+</footer>

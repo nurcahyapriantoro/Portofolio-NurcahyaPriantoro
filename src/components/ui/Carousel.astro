@@ -1,0 +1,98 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+interface Slide {
+  src: ImageMetadata;
+  alt: string;
+}
+
+interface Props {
+  id: string;
+  slides: Slide[];
+  label: string;
+}
+
+const { id, slides, label } = Astro.props;
+const total = slides.length;
+const showDots = total <= 10;
+---
+
+<div
+  id={id}
+  data-carousel
+  role="region"
+  aria-roledescription="carousel"
+  aria-label={label}
+  class="group relative aspect-16/9 w-full overflow-hidden rounded-xl bg-slate-900 ring-1 ring-slate-200/80 dark:ring-slate-800"
+>
+  <div
+    data-carousel-track
+    class="flex h-full w-full transition-transform duration-500 ease-out will-change-transform"
+  >
+    {slides.map((slide, index) => (
+      <div
+        data-carousel-slide
+        class="h-full w-full shrink-0"
+        aria-label={`Slide ${index + 1} of ${total}`}
+      >
+        <Image
+          src={slide.src}
+          alt={slide.alt}
+          widths={[480, 800, 1200]}
+          sizes="(max-width: 768px) 100vw, 600px"
+          class="h-full w-full object-cover"
+        />
+      </div>
+    ))}
+  </div>
+
+  {total > 1 && (
+    <>
+      <button
+        type="button"
+        data-carousel-prev
+        aria-label={`Previous slide for ${label}`}
+        class="absolute top-1/2 left-2.5 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-slate-950/70 text-white backdrop-blur-xs transition hover:bg-slate-950/90 focus-visible:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+      >
+        <Icon name="lucide:chevron-left" class="h-4 w-4" aria-hidden="true" />
+      </button>
+
+      <button
+        type="button"
+        data-carousel-next
+        aria-label={`Next slide for ${label}`}
+        class="absolute top-1/2 right-2.5 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-slate-950/70 text-white backdrop-blur-xs transition hover:bg-slate-950/90 focus-visible:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+      >
+        <Icon name="lucide:chevron-right" class="h-4 w-4" aria-hidden="true" />
+      </button>
+
+      <div class="pointer-events-none absolute inset-x-0 bottom-2.5 flex items-center justify-center gap-2 px-3">
+        {showDots ? (
+          <div class="pointer-events-auto flex items-center gap-1.5 rounded-full bg-slate-950/60 px-2.5 py-1 backdrop-blur-xs">
+            {slides.map((_, index) => (
+              <button
+                type="button"
+                data-carousel-dot
+                aria-label={`Go to slide ${index + 1}`}
+                aria-current={index === 0 ? 'true' : 'false'}
+                class:list={[
+                  'h-2 rounded-full transition-all',
+                  index === 0 ? 'w-5 bg-white' : 'w-2 bg-white/50 hover:bg-white/80',
+                ]}
+              />
+            ))}
+          </div>
+        ) : (
+          <span
+            data-carousel-counter
+            class="rounded-full bg-slate-950/70 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur-xs"
+          >
+            1 / {total}
+          </span>
+        )}
+      </div>
+    </>
+  )}
+</div>

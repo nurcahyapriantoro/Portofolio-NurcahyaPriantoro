@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+import Section from '@/components/ui/Section.astro';
+import Badge from '@/components/ui/Badge.astro';
+
+interface Props {
+  items: CollectionEntry<'skills'>[];
+}
+
+const { items } = Astro.props;
+const sorted = [...items].sort((a, b) => a.data.order - b.data.order);
+---
+
+<Section
+  id="skills"
+  eyebrow="Capabilities"
+  title="Technical Skills"
+  subtitle="End-to-end engineering toolkit spanning data pipelines, internal audit analytics, full-stack web, cloud, and blockchain."
+>
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    {sorted.map((entry) => {
+      const s = entry.data;
+      return (
+        <div class="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-2xs dark:border-slate-800 dark:bg-slate-900">
+          <div class="flex items-center gap-2.5">
+            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-950/60 dark:text-blue-400">
+              <Icon name={s.icon} class="h-4.5 w-4.5" aria-hidden="true" />
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">{s.category}</h3>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            {s.items.map((item) => (
+              <Badge variant="default">{item}</Badge>
+            ))}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</Section>
