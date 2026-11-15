@@ -12,7 +12,8 @@ interface Props {
 
 const { title, description, email, socials } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
-const faviconHref = withBase('/favicon.svg');
+const faviconHref = withBase('/favicon.png');
+const appleIconHref = withBase('/apple-touch-icon.png');
 
 const personJsonLd = {
   '@context': 'https://schema.org',
@@ -37,7 +38,8 @@ const personJsonLd = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" type="image/svg+xml" href={faviconHref} />
+    <link rel="icon" type="image/png" sizes="64x64" href={faviconHref} />
+    <link rel="apple-touch-icon" sizes="180x180" href={appleIconHref} />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
