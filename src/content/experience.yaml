@@ -148,7 +148,7 @@
       caption: Ikan Beku Chain — Screen 28
     - src: ../assets/images/projects/ikan-beku-chain/picture-29.png
       caption: Ikan Beku Chain — Screen 29
-  order: 2
+  order: 3
 
 - id: rtrwhub
   company: RTRWHUB
@@ -177,7 +177,7 @@
   links:
     - label: Live Portal
       href: https://rtrwhub.vercel.app
-  order: 3
+  order: 5
 
 - id: bank-indonesia
   company: Bank Indonesia (Central Bank of Indonesia)
@@ -224,7 +224,7 @@
       caption: Building and monitoring the media-intelligence ETL pipeline
     - src: ../assets/images/experience/bank-indonesia/team-dspk-farewell.jpeg
       caption: Data & Surveillance Team — Payment System Surveillance Dept (DSPK)
-  order: 4
+  order: 2
 
 - id: classnde-freelance
   company: ClassNDE Online Learning Platform
@@ -248,7 +248,7 @@
   links:
     - label: Live Platform
       href: https://guitarclassbynde.id/ndeofficial
-  order: 5
+  order: 4
 
 - id: polkadot-academy
   company: Polkadot Blockchain Academy
@@ -273,7 +273,7 @@
         Analyzed and applied BABE/GRANDPA consensus mechanisms, on-chain governance, protocol
         security, and treasury systems.
   tech: [Rust, Substrate, FRAME Pallets, BABE/GRANDPA, On-Chain Governance]
-  order: 6
+  order: 7
 
 - id: bangkit-academy
   company: Bangkit Academy 2024 (Google, GoTo, Traveloka)
@@ -306,7 +306,7 @@
   links:
     - label: Certificate
       href: https://drive.google.com/file/d/1rg974Pbgsf_bpXAR8_gPzpvBry5zSWaE/view?usp=drive_link
-  order: 7
+  order: 6
 
 - id: idcamp-indosat
   company: Indosat Ooredoo Hutchison Digital Camp (IDCamp)
