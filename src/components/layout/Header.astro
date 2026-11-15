@@ -1,14 +1,16 @@
 ---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 import { NAV_ITEMS, withBase } from '@/lib/site';
 import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
-  shortMark: string;
+  avatar: ImageMetadata;
   cvPath: string;
 }
 
-const { shortMark, cvPath } = Astro.props;
+const { avatar, cvPath } = Astro.props;
 const cvHref = withBase(cvPath);
 ---
 
@@ -16,10 +18,17 @@ const cvHref = withBase(cvPath);
   <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6 lg:px-8">
     <a
       href="#top"
-      class="flex items-center gap-2 text-lg font-bold tracking-tight text-slate-900 dark:text-white"
+      class="flex items-center gap-2.5 text-lg font-bold tracking-tight text-slate-900 dark:text-white"
     >
-      <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-900 text-xs font-extrabold text-white dark:bg-blue-600">
-        {shortMark}
+      <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-full bg-slate-100 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">
+        <Image
+          src={avatar}
+          alt="Nurcahya Priantoro"
+          widths={[72, 128]}
+          sizes="36px"
+          loading="eager"
+          class="h-full w-full object-cover object-top"
+        />
       </span>
       <span class="hidden sm:inline">Nurcahya Priantoro</span>
     </a>
