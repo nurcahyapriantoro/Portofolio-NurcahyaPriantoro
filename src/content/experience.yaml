@@ -90,14 +90,64 @@
         BRAIN IPB University and Pekalongan City Government stakeholders.
   tech: [Hyperledger Fabric, Go Chaincode, NestJS 10, JWT RS256, Grafana, Prometheus, Docker]
   gallery:
-    - src: ../assets/images/projects/ikan-beku-chain/01-dkp-dashboard-live.png
-      caption: DKP Monitoring Dashboard · Real-time batch tracking & blockchain status
-    - src: ../assets/images/projects/ikan-beku-chain/02-blockchain-node-status.png
-      caption: Hyperledger Fabric live network status (frozen-fish-channel)
-    - src: ../assets/images/projects/ikan-beku-chain/04-tpi-auction-qr.png
-      caption: TPI Auction Ticket with verifiable QR code & blockchain record
-    - src: ../assets/images/projects/ikan-beku-chain/06-dkp-audit-log.png
-      caption: Immutable audit log tracking multi-organization blockchain transactions
+    - src: ../assets/images/projects/ikan-beku-chain/picture-01.png
+      caption: Ikan Beku Chain — Screen 01
+    - src: ../assets/images/projects/ikan-beku-chain/picture-02.png
+      caption: Ikan Beku Chain — Screen 02
+    - src: ../assets/images/projects/ikan-beku-chain/picture-03.png
+      caption: Ikan Beku Chain — Screen 03
+    - src: ../assets/images/projects/ikan-beku-chain/picture-04.png
+      caption: Ikan Beku Chain — Screen 04
+    - src: ../assets/images/projects/ikan-beku-chain/picture-05.png
+      caption: Ikan Beku Chain — Screen 05
+    - src: ../assets/images/projects/ikan-beku-chain/picture-06.png
+      caption: Ikan Beku Chain — Screen 06
+    - src: ../assets/images/projects/ikan-beku-chain/picture-07.png
+      caption: Ikan Beku Chain — Screen 07
+    - src: ../assets/images/projects/ikan-beku-chain/picture-08.png
+      caption: Ikan Beku Chain — Screen 08
+    - src: ../assets/images/projects/ikan-beku-chain/picture-09.png
+      caption: Ikan Beku Chain — Screen 09
+    - src: ../assets/images/projects/ikan-beku-chain/picture-10.png
+      caption: Ikan Beku Chain — Screen 10
+    - src: ../assets/images/projects/ikan-beku-chain/picture-11.png
+      caption: Ikan Beku Chain — Screen 11
+    - src: ../assets/images/projects/ikan-beku-chain/picture-12.png
+      caption: Ikan Beku Chain — Screen 12
+    - src: ../assets/images/projects/ikan-beku-chain/picture-13.png
+      caption: Ikan Beku Chain — Screen 13
+    - src: ../assets/images/projects/ikan-beku-chain/picture-14.png
+      caption: Ikan Beku Chain — Screen 14
+    - src: ../assets/images/projects/ikan-beku-chain/picture-15.png
+      caption: Ikan Beku Chain — Screen 15
+    - src: ../assets/images/projects/ikan-beku-chain/picture-16.png
+      caption: Ikan Beku Chain — Screen 16
+    - src: ../assets/images/projects/ikan-beku-chain/picture-17.png
+      caption: Ikan Beku Chain — Screen 17
+    - src: ../assets/images/projects/ikan-beku-chain/picture-18.png
+      caption: Ikan Beku Chain — Screen 18
+    - src: ../assets/images/projects/ikan-beku-chain/picture-19.png
+      caption: Ikan Beku Chain — Screen 19
+    - src: ../assets/images/projects/ikan-beku-chain/picture-20.png
+      caption: Ikan Beku Chain — Screen 20
+    - src: ../assets/images/projects/ikan-beku-chain/picture-21.png
+      caption: Ikan Beku Chain — Screen 21
+    - src: ../assets/images/projects/ikan-beku-chain/picture-22.png
+      caption: Ikan Beku Chain — Screen 22
+    - src: ../assets/images/projects/ikan-beku-chain/picture-23.png
+      caption: Ikan Beku Chain — Screen 23
+    - src: ../assets/images/projects/ikan-beku-chain/picture-24.png
+      caption: Ikan Beku Chain — Screen 24
+    - src: ../assets/images/projects/ikan-beku-chain/picture-25.png
+      caption: Ikan Beku Chain — Screen 25
+    - src: ../assets/images/projects/ikan-beku-chain/picture-26.png
+      caption: Ikan Beku Chain — Screen 26
+    - src: ../assets/images/projects/ikan-beku-chain/picture-27.png
+      caption: Ikan Beku Chain — Screen 27
+    - src: ../assets/images/projects/ikan-beku-chain/picture-28.png
+      caption: Ikan Beku Chain — Screen 28
+    - src: ../assets/images/projects/ikan-beku-chain/picture-29.png
+      caption: Ikan Beku Chain — Screen 29
   order: 2
 
 - id: rtrwhub

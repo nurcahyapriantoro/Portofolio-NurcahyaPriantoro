@@ -62,18 +62,64 @@
     - Validated via a 25-step on-chain end-to-end test suite (159+ on-chain transactions)
   tech: [Hyperledger Fabric, Go Chaincode, NestJS 10, JWT RS256, Grafana, Prometheus]
   images:
-    - src: ../assets/images/projects/ikan-beku-chain/01-dkp-dashboard-live.png
-      alt: Ikan Beku Chain DKP Monitoring Dashboard showing live blockchain status and batch activity
-    - src: ../assets/images/projects/ikan-beku-chain/02-blockchain-node-status.png
-      alt: Hyperledger Fabric live network telemetry for frozen-fish-channel and FrozenFishChaincode
-    - src: ../assets/images/projects/ikan-beku-chain/03-nelayan-catches-tx.png
-      alt: Fisherman catch ledger with verified on-chain blockchain transaction hashes
-    - src: ../assets/images/projects/ikan-beku-chain/04-tpi-auction-qr.png
-      alt: TPI auction ticket modal with embedded QR authenticity verification code
-    - src: ../assets/images/projects/ikan-beku-chain/05-tpi-history-ledger.png
-      alt: TPI audit-ready transaction history ledger with PDF and XLSX export
-    - src: ../assets/images/projects/ikan-beku-chain/06-dkp-audit-log.png
-      alt: Immutable DKP activity audit log recording SUBMIT_TO_BLOCKCHAIN transactions
+    - src: ../assets/images/projects/ikan-beku-chain/picture-01.png
+      alt: Ikan Beku Chain — Screen 01
+    - src: ../assets/images/projects/ikan-beku-chain/picture-02.png
+      alt: Ikan Beku Chain — Screen 02
+    - src: ../assets/images/projects/ikan-beku-chain/picture-03.png
+      alt: Ikan Beku Chain — Screen 03
+    - src: ../assets/images/projects/ikan-beku-chain/picture-04.png
+      alt: Ikan Beku Chain — Screen 04
+    - src: ../assets/images/projects/ikan-beku-chain/picture-05.png
+      alt: Ikan Beku Chain — Screen 05
+    - src: ../assets/images/projects/ikan-beku-chain/picture-06.png
+      alt: Ikan Beku Chain — Screen 06
+    - src: ../assets/images/projects/ikan-beku-chain/picture-07.png
+      alt: Ikan Beku Chain — Screen 07
+    - src: ../assets/images/projects/ikan-beku-chain/picture-08.png
+      alt: Ikan Beku Chain — Screen 08
+    - src: ../assets/images/projects/ikan-beku-chain/picture-09.png
+      alt: Ikan Beku Chain — Screen 09
+    - src: ../assets/images/projects/ikan-beku-chain/picture-10.png
+      alt: Ikan Beku Chain — Screen 10
+    - src: ../assets/images/projects/ikan-beku-chain/picture-11.png
+      alt: Ikan Beku Chain — Screen 11
+    - src: ../assets/images/projects/ikan-beku-chain/picture-12.png
+      alt: Ikan Beku Chain — Screen 12
+    - src: ../assets/images/projects/ikan-beku-chain/picture-13.png
+      alt: Ikan Beku Chain — Screen 13
+    - src: ../assets/images/projects/ikan-beku-chain/picture-14.png
+      alt: Ikan Beku Chain — Screen 14
+    - src: ../assets/images/projects/ikan-beku-chain/picture-15.png
+      alt: Ikan Beku Chain — Screen 15
+    - src: ../assets/images/projects/ikan-beku-chain/picture-16.png
+      alt: Ikan Beku Chain — Screen 16
+    - src: ../assets/images/projects/ikan-beku-chain/picture-17.png
+      alt: Ikan Beku Chain — Screen 17
+    - src: ../assets/images/projects/ikan-beku-chain/picture-18.png
+      alt: Ikan Beku Chain — Screen 18
+    - src: ../assets/images/projects/ikan-beku-chain/picture-19.png
+      alt: Ikan Beku Chain — Screen 19
+    - src: ../assets/images/projects/ikan-beku-chain/picture-20.png
+      alt: Ikan Beku Chain — Screen 20
+    - src: ../assets/images/projects/ikan-beku-chain/picture-21.png
+      alt: Ikan Beku Chain — Screen 21
+    - src: ../assets/images/projects/ikan-beku-chain/picture-22.png
+      alt: Ikan Beku Chain — Screen 22
+    - src: ../assets/images/projects/ikan-beku-chain/picture-23.png
+      alt: Ikan Beku Chain — Screen 23
+    - src: ../assets/images/projects/ikan-beku-chain/picture-24.png
+      alt: Ikan Beku Chain — Screen 24
+    - src: ../assets/images/projects/ikan-beku-chain/picture-25.png
+      alt: Ikan Beku Chain — Screen 25
+    - src: ../assets/images/projects/ikan-beku-chain/picture-26.png
+      alt: Ikan Beku Chain — Screen 26
+    - src: ../assets/images/projects/ikan-beku-chain/picture-27.png
+      alt: Ikan Beku Chain — Screen 27
+    - src: ../assets/images/projects/ikan-beku-chain/picture-28.png
+      alt: Ikan Beku Chain — Screen 28
+    - src: ../assets/images/projects/ikan-beku-chain/picture-29.png
+      alt: Ikan Beku Chain — Screen 29
   order: 2
 
 - id: rtrwhub-portal
