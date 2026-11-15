@@ -18,6 +18,8 @@ export function initCarousels(): void {
     let current = 0;
     let timerId: number | undefined;
     let touchStartX = 0;
+    let videoPlaying = false;
+    const videos = root.querySelectorAll<HTMLVideoElement>('video');
 
     const render = (): void => {
       track.style.transform = `translate3d(-${current * 100}%, 0, 0)`;
@@ -35,6 +37,10 @@ export function initCarousels(): void {
     };
 
     const goTo = (index: number): void => {
+      videos.forEach((v) => {
+        if (!v.paused) v.pause();
+      });
+      videoPlaying = false;
       current = (index + total) % total;
       render();
     };
@@ -47,10 +53,23 @@ export function initCarousels(): void {
     };
 
     const startAutoplay = (): void => {
-      if (prefersReducedMotion || document.hidden) return;
+      if (prefersReducedMotion || document.hidden || videoPlaying) return;
       stopAutoplay();
       timerId = window.setInterval(() => goTo(current + 1), 5000);
     };
+
+    videos.forEach((video) => {
+      video.addEventListener('play', () => {
+        videoPlaying = true;
+        stopAutoplay();
+      });
+      const onStop = (): void => {
+        videoPlaying = Array.from(videos).some((v) => !v.paused && !v.ended);
+        if (!videoPlaying) startAutoplay();
+      };
+      video.addEventListener('pause', onStop);
+      video.addEventListener('ended', onStop);
+    });
 
     prevBtn?.addEventListener('click', () => goTo(current - 1));
     nextBtn?.addEventListener('click', () => goTo(current + 1));

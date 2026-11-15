@@ -122,7 +122,13 @@ const programs = sorted.filter((i) => i.data.category === 'program');
                   <Carousel
                     id={`exp-gallery-${entry.id}`}
                     label={`${d.company} gallery`}
-                    slides={d.gallery.map((g) => ({ src: g.src, alt: g.caption }))}
+                    slides={d.gallery.map((g) => ({
+                      type: g.type,
+                      src: g.src,
+                      videoSrc: g.videoSrc,
+                      poster: g.poster,
+                      alt: g.caption,
+                    }))}
                   />
                 </div>
               )}

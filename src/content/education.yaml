@@ -11,11 +11,23 @@ main:
   photo: ../assets/images/profile/graduation.jpg
   website: https://www.ipb.ac.id/
   coursework:
+    - Programming & Algorithms Fundamentals
+    - Discrete Structures & Mathematical Logic
+    - Calculus & Linear Algebra for Computing
+    - Probability Theory & Quantitative Methods
     - Data Structures & Algorithm Analysis
+    - Object-Oriented Programming (Java)
+    - Computer Organization & Architecture
+    - Operating Systems
+    - Data Communications & Computer Networks
     - Database Systems
     - Software Engineering
-    - Artificial Intelligence
     - System Analysis & Design
     - Information Systems
-    - Object-Oriented Programming (Java)
     - User Experience Design
+    - Computer Graphics & Visualization
+    - Digital Image Processing
+    - Artificial Intelligence & Computational Intelligence
+    - Data Mining & Machine Learning
+    - Information & Cyber Security
+    - Capstone Project & Industrial Internship (PKL)

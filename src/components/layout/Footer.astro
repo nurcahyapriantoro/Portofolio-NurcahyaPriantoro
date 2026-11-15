@@ -9,10 +9,16 @@ interface Props {
   email: string;
   cvPath: string;
   portfolioPdfPath: string;
+  studio?:
+    | {
+        name: string;
+        url: string;
+      }
+    | undefined;
   socials: Array<{ label: string; href: string; icon: string }>;
 }
 
-const { name, headline, location, email, cvPath, portfolioPdfPath, socials } = Astro.props;
+const { name, headline, location, email, cvPath, portfolioPdfPath, studio, socials } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -86,6 +92,24 @@ const year = new Date().getFullYear();
           />
           <span>{email}</span>
         </a>
+        {studio && (
+          <div>
+            <a
+              href={studio.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm font-medium text-slate-700 transition hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400"
+            >
+              <Icon
+                name="lucide:briefcase"
+                class="h-4 w-4 text-blue-600 dark:text-blue-400"
+                aria-hidden="true"
+              />
+              <span>Services: {studio.name}</span>
+              <Icon name="lucide:external-link" class="h-3.5 w-3.5 opacity-70" aria-hidden="true" />
+            </a>
+          </div>
+        )}
         <div class="flex items-center gap-2.5">
           {socials.map((s) => (
             <a

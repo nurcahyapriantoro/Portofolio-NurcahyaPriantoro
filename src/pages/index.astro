@@ -58,6 +58,7 @@ const linkedin =
       statusBadge={p.statusBadge}
       heroPhoto={p.heroPhoto}
       cvPath={p.cvPath}
+      studio={p.studio}
       socials={p.socials}
     />
 
@@ -79,9 +80,14 @@ const linkedin =
 
     <Organizations items={organizations} />
 
-    <PortfolioPdf pdfPath={p.portfolioPdfPath} sizeLabel={p.portfolioPdfSizeLabel} />
+    <PortfolioPdf
+      pdfPath={p.portfolioPdfPath}
+      sizeLabel={p.portfolioPdfSizeLabel}
+      cvPath={p.cvPath}
+      cvLabel={p.cvLabel}
+    />
 
-    <Contact email={p.email} cvPath={p.cvPath} linkedinUrl={linkedin} />
+    <Contact email={p.email} cvPath={p.cvPath} linkedinUrl={linkedin} studio={p.studio} />
   </main>
 
   <Footer
@@ -91,6 +97,7 @@ const linkedin =
     email={p.email}
     cvPath={p.cvPath}
     portfolioPdfPath={p.portfolioPdfPath}
+    studio={p.studio}
     socials={p.socials}
   />
 </BaseLayout>

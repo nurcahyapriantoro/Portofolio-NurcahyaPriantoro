@@ -48,7 +48,9 @@
     - API MPMS Ch. 17
     - Digital Forensic Analytics
   gallery:
-    - src: ../assets/images/experience/pertamina/internal-audit-hq.jpeg
+    - type: video
+      videoSrc: /media/pertamina-internal-audit.mp4
+      poster: ../assets/images/experience/pertamina/internal-audit-video-poster.jpg
       caption: Corporate presence · PT Pertamina (Persero) Internal Audit Holding HQ
     - src: ../assets/images/experience/pertamina/surveillance-ui.jpeg
       caption: Surveillance UI · Shewhart anomaly triage & custody transfer portal
@@ -89,6 +91,15 @@
         Created a 25-step on-chain end-to-end test suite to validate operational workflows with
         BRAIN IPB University and Pekalongan City Government stakeholders.
   tech: [Hyperledger Fabric, Go Chaincode, NestJS 10, JWT RS256, Grafana, Prometheus, Docker]
+  gallery:
+    - src: ../assets/images/projects/ikan-beku-chain/01-dkp-dashboard-live.png
+      caption: DKP Monitoring Dashboard · Real-time batch tracking & blockchain status
+    - src: ../assets/images/projects/ikan-beku-chain/02-blockchain-node-status.png
+      caption: Hyperledger Fabric live network status (frozen-fish-channel)
+    - src: ../assets/images/projects/ikan-beku-chain/04-tpi-auction-qr.png
+      caption: TPI Auction Ticket with verifiable QR code & blockchain record
+    - src: ../assets/images/projects/ikan-beku-chain/06-dkp-audit-log.png
+      caption: Immutable audit log tracking multi-organization blockchain transactions
   order: 2
 
 - id: rtrwhub
@@ -130,7 +141,7 @@
   workMode: On-site
   start: '2025-09'
   end: '2026-03'
-  logo: ../assets/images/logos/bank-indonesia.webp
+  logo: ../assets/images/logos/bank-indonesia.png
   summary: >-
     Engineered an automated end-to-end media intelligence ecosystem for Bank Indonesia, replacing
     manual monitoring with multi-platform scraping, Cloudera ETL, fine-tuned LLM classification, and
@@ -163,7 +174,7 @@
       caption: Presenting Power BI media-intelligence dashboard to senior management
     - src: ../assets/images/experience/bank-indonesia/build-pipeline.jpg
       caption: Building and monitoring the media-intelligence ETL pipeline
-    - src: ../assets/images/experience/bank-indonesia/team-dspk.jpg
+    - src: ../assets/images/experience/bank-indonesia/team-dspk-farewell.jpeg
       caption: Data & Surveillance Team — Payment System Surveillance Dept (DSPK)
   order: 4
 

@@ -33,8 +33,17 @@ const profile = defineCollection({
       heroPhoto: image(),
       aboutPhoto: image(),
       cvPath: z.string(),
+      cvLabel: z.string().optional(),
       portfolioPdfPath: z.string(),
       portfolioPdfSizeLabel: z.string(),
+      studio: z
+        .object({
+          name: z.string(),
+          url: z.url(),
+          role: z.string(),
+          summary: z.string(),
+        })
+        .optional(),
       socials: z.array(
         z.object({
           label: z.string(),
@@ -83,10 +92,20 @@ const experience = defineCollection({
       tech: z.array(z.string()).default([]),
       gallery: z
         .array(
-          z.object({
-            src: image(),
-            caption: z.string(),
-          }),
+          z
+            .object({
+              type: z.enum(['image', 'video']).default('image'),
+              src: image().optional(),
+              videoSrc: z.string().optional(),
+              poster: image().optional(),
+              caption: z.string(),
+            })
+            .refine(
+              (item) => (item.type === 'video' ? Boolean(item.videoSrc) : Boolean(item.src)),
+              {
+                message: 'Image gallery items require src; video gallery items require videoSrc.',
+              },
+            ),
         )
         .default([]),
       links: z

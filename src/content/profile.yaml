@@ -48,11 +48,19 @@ main:
     - value: '3+'
       label: Enterprise Clients
       detail: End-to-end SDLC delivery across audit systems, corporate web, and e-learning
-  heroPhoto: ../assets/images/profile/headshot-formal.jpg
+  heroPhoto: ../assets/images/profile/photo-skl.jpg
   aboutPhoto: ../assets/images/profile/photo-ipb.jpg
   cvPath: /files/cv-nurcahya-priantoro.pdf
+  cvLabel: 3 Pages · Updated Resume PDF
   portfolioPdfPath: /files/portfolio-nurcahya-priantoro.pdf
   portfolioPdfSizeLabel: 12 MB · 8 Slides
+  studio:
+    name: CocoTech Studio
+    url: https://www.cocotech.studio/
+    role: Software, Data & AI Engineering Services
+    summary: >-
+      Looking to build a custom web platform, automated data pipeline, AI workflow, or blockchain
+      system? Engage my engineering team directly through CocoTech Studio.
   socials:
     - label: LinkedIn
       href: https://www.linkedin.com/in/nurcahya-priantoro/
